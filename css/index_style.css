@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+/* my framework  */
+.main-color{
+    background-color: #341f97
+}
+.second-color {
+    background-color: #333
+}
+
+/* my framework  */
+
+/* start nav bar */
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    z-index: 55;
+}
+
+.fixed-nav a {
+    color: #fff !important;
+}
+
+.profile-face img{
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+.nav-item {
+    position: relative;
+}
+
+.nav-item span{
+    position: absolute;
+    background-color:#fff;
+    transition: .4s;
+}
+.border-1{
+    top: 5px;
+    left: 0;
+    height: 1px;
+    width: 0;
+}
+    .border-2{
+    top: 5px;
+    right: 0;
+    width: 1px;
+    height: 0;
+    }
+.border-3 {
+    bottom: 5px;
+    right: 0;
+    height: 1px;
+    width: 0;
+
+}
+.border-4 {
+    top: 5px;
+    left: 0px;
+    width: 1px;
+    height: 0;
+}
+.nav-item:hover .border-1 {
+     width: 100%;
+}
+.nav-item:hover .border-2 {
+     height: 77%;
+}
+.nav-item:hover .border-3 {
+    width: 100%;
+}
+.nav-item:hover .border-4 {
+     height: 77%;
+}
+
+
+
+
+/* end nav bar */
+
+/* start home */
+.home img{
+    height:450px;
+    position: relative;
+}
+.content{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+
+/* end home */
+
+
+/* start footer */
+.my-footer{
+    background-image: url(../images/map.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.last-section{
+    color: #fff;
+}
+.social i{
+    width: 33px;
+    height: 33px;
+    color: #fff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.social i:hover{
+    background-color: #fff;
+    color: #341f97;
+}
+
+/* start booking page */
+.form-input{
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+.form-input:focus {
+    border-color: none;
+    box-shadow: none
+}
+
+/* end booking page */
+
+/*start moa3idi page */
+
+.card-conainer , .s-card {
+    border: 1px solid #eee;    height: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.card-conainer img , .s-cardimg{
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 200px;
+}
+.card-content i{
+    color: rgb(43, 41, 41);
+    font-size: 14px;
+}
+.card-content h5{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 7px
+}
+.card-content p{
+    padding-right: 10px;
+    font-size: 14px;
+    color: rgb(156, 149, 149);
+}
+/*end moa3idi page */
+
+
+
+
+
+/* sign in page */
+#erorrmessage {
+    display: inline-block;
+    position: absolute;
+    left: 42px;
+    top: 35px;
+    background: #fff;
+    padding: .8em;
+    z-index: 20;
+    color: darkred;
+    font-size: 13px;
+    border-radius: 0.25em;
+    padding: 1px 10px;
+    margin: 5px;
+    border: 1px solid #eee;
+    display: none;
+}
+.pass {
+    position: relative;
+}
+.hide-password{
+    position: absolute;
+    top: 10px;
+    left: 10px
+}
+.sign{
+    background-image: url(../images/church-3.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 100%;
+    
+}
+
+/* end sign in page */
+
+/* elkhedma page */
