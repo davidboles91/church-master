@@ -9,16 +9,82 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/index_style.css" />
-      <link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Scheherazade" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
 </head>
 
 <body>
     <!-- start nav bar -->
 
 
-    <nav class="main-color navbar fixed-nav my-nav navbar-expand-lg navbar-light ">
+    <nav class="main-color navbar fixed-nav my-nav navbar-expand-lg navbar-light right-nav">
+
+        <!-- right side -->
+
         <a class="ml-5 navbar-brand" href="#"> <i class="fa-2x fas fa-church"></i> </a>
+
+        <li class="nav-item dropdown list-unstyled  hide-min">
+            <a class="nav-link profile-face dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="./images/face.jpg">
+            </a>
+            <div class="dropdown-menu second-color profile" aria-labelledby="navbarDropdown ">
+                <div class="">
+                    <a class="dropdown-item " href="#">تغيير الباسورد</a>
+                    <a class="dropdown-item" href="#">تسجيل الخروج</a>
+                </div>
+            </div>
+
+        </li>
+
+        <li class="nav-item dropdown language list-unstyled hide-min">
+            <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-globe"></i>
+            </a>
+            <div class="dropdown-menu second-color " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item " href="#">ENGLISH</a>
+                <a class="dropdown-item" href="#">عربي </a>
+            </div>
+
+        </li>
+
+
+        <li class="nav-item dropdown  notfication-container list-unstyled hide-min">
+            <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="far fa-bell"></i>
+            </a>
+            <div class="notfication second-color dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="">
+                    <p><a class="dropdown-item " href="#">notficaaaaaaaaaaaaation</a></p>
+                    <p><a class="dropdown-item " href="#">notficaaaaaaaaaaaaation</a></p>
+                    <p><a class="dropdown-item " href="#">notficaaaaaaaaaaaaation</a></p>
+                </div>
+            </div>
+
+        </li>
+
+        <li class="nav-item dropdown language list-unstyled hide-min">
+            <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="far fa-clock"></i>
+            </a>
+            <div class="dropdown-menu second-color " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item " href="acceped-mwa3id.html"> <i class="fas fa-check-double"></i> مواعيد
+                    اتقبلت</a>
+                <a class="dropdown-item" href="waiting-mwa3id.html"> <i class="fas fa-hourglass-start"></i> مواعيد قيد
+                    الانتظار </a>
+                <a class="dropdown-item" href="refused-mwa3id.html"> <i class="fas fa-times-circle"></i> مواعيد اترفضت
+                </a>
+            </div>
+
+        </li>
+
+
+        <!--end  right side -->
+
+
+
 
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -26,55 +92,95 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse mr-5" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse mr-5 left-side" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
 
+                <li class="nav-item dropdown hide-max">
+                    <a class="nav-link profile-face dropdown-toggle" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./images/face.jpg">
+                    </a>
+                    <div class="dropdown-menu second-color profile" aria-labelledby="navbarDropdown ">
+                        <div class="">
+                            <a class="dropdown-item " href="#">تغيير الباسورد</a>
+                            <a class="dropdown-item" href="#">تسجيل الخروج</a>
+                        </div>
+                    </div>
+
+                </li>
+
+
+                <li class="nav-item dropdown language hide-max">
+                    <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                    <div class="dropdown-menu second-color " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item " href="#">ENGLISH</a>
+                        <a class="dropdown-item" href="#">عربي </a>
+                    </div>
+
+                </li>
+
+
+                <li class="nav-item dropdown  notfication-container hide-max">
+                    <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="far fa-bell"></i>
+                    </a>
+                    <div class="notfication second-color dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="">
+                            <p><a class="dropdown-item " href="#">notficaaaaaaaaaaaaation</a></p>
+                            <p><a class="dropdown-item " href="#">notficaaaaaaaaaaaaation</a></p>
+                            <p><a class="dropdown-item " href="#">notficaaaaaaaaaaaaation</a></p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown language list-unstyled hide-max">
+                    <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="far fa-clock"></i>
+                    </a>
+                    <div class="dropdown-menu second-color " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item " href="acceped-mwa3id.html"> <i class="fas fa-check-double"></i> مواعيد
+                            اتقبلت</a>
+                        <a class="dropdown-item" href="waiting-mwa3id.html"> <i class="fas fa-hourglass-start"></i>
+                            مواعيد قيد الانتظار
+                        </a>
+                        <a class="dropdown-item" href="refused-mwa3id.html"> <i class="fas fa-times-circle"></i> مواعيد
+                            اترفضت </a>
+                    </div>
+
+                </li>
+
+
+
+
                 <li class="nav-item ">
-                    <a class="nav-link" href="#" data-value="">الرئيسيه</a>
+                    <a class="nav-link" href="main.html" data-value="">الرئيسيه</a>
                     <span class="border-1"></span>
                     <span class="border-2"></span>
                     <span class="border-3"></span>
                     <span class="border-4"></span>
                 </li>
 
+
                 <li class="nav-item">
-                    <a class="nav-link profile-face" href="#" data-value="fooot"> <img src="./images/face.jpg"> </a>
+                    <a class="nav-link" href="book" data-value="testmonial">حجز موعد</a>
+                    <span class="border-1"></span>
+                    <span class="border-2"></span>
+                    <span class="border-3"></span>
+                    <span class="border-4"></span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="khadem.html" data-value="testmonial">امين الخدمه </a>
                     <span class="border-1"></span>
                     <span class="border-2"></span>
                     <span class="border-3"></span>
                     <span class="border-4"></span>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-value="service">جدول المواعيد </a>
-                    <span class="border-1"></span>
-                    <span class="border-2"></span>
-                    <span class="border-3"></span>
-                    <span class="border-4"></span>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-value="testmonial">حجز المواعيد</a>
-                    <span class="border-1"></span>
-                    <span class="border-2"></span>
-                    <span class="border-3"></span>
-                    <span class="border-4"></span>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-value="testmonial">امين الخدمه </a>
-                    <span class="border-1"></span>
-                    <span class="border-2"></span>
-                    <span class="border-3"></span>
-                    <span class="border-4"></span>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html" data-value="home">تسجيل الدخول </a>
-                    <span class="border-1"></span>
-                    <span class="border-2"></span>
-                    <span class="border-3"></span>
-                    <span class="border-4"></span>
-                </li>
             </ul>
         </div>
     </nav>
@@ -82,16 +188,16 @@
 
     <!-- stat moa3idi section -->
 
-    <section class="wait-mwaid-container  pt-5">
-        <div class=" text-center wait-mwaid mt-5 ">
-            <h2 class="my-3 mx-auto display-4 "> مواعيد قيد الانتظار </h2>
+    <section class="refused-mwaid-container  pt-5">
+        <div class=" text-center refused-mwaid mt-5 ">
+            <h2 class="my-3 mx-auto display-5 "> مواعيد تم رفضها   </h2>
             <hr class=" m-auto">
         </div>  
 		
         <div class="container mt-5">
             <div class="row">
 
-  <!-- srat card -->
+  <!-- start card -->
                 <div class="col-md-4 my-5 ">
                     <div class="card-conainer w-100">
                         <img class="img-fluid" src="./images/church-1.jpg">
@@ -135,7 +241,7 @@
                                        <p>مبنى الخدمات - الدور الرابع</p>
                              </div>
                         
-                        <button class="btn del btn-block"> <i class="far fa-trash-alt"></i> الغاء الموعد </button>
+                        <!-- <button class="btn del my-2"> <i class="far fa-trash-alt"></i> الغاء الموعد </button> -->
                     </div>
                 </div>
             </div>
@@ -185,7 +291,7 @@
                          <p>مبنى الخدمات - الدور الرابع</p>
                      </div>
 
-                     <button class="btn del btn-block"> <i class="far fa-trash-alt"></i> الغاء الموعد </button>
+                     <!-- <button class="btn del my-2"> <i class="far fa-trash-alt"></i> الغاء الموعد </button> -->
                  </div>
              </div>
          </div>
@@ -235,7 +341,7 @@
                          <p>مبنى الخدمات - الدور الرابع</p>
                      </div>
 
-                     <button class="btn del btn-block"> <i class="far fa-trash-alt"></i> الغاء الموعد </button>
+                     <!-- <button class="btn del my-2"> <i class="far fa-trash-alt"></i> الغاء الموعد </button> -->
                  </div>
              </div>
          </div>
@@ -285,7 +391,7 @@
                          <p>مبنى الخدمات - الدور الرابع</p>
                      </div>
 
-                     <button class="btn del btn-block"> <i class="far fa-trash-alt"></i> الغاء الموعد </button>
+                     <!-- <button class="btn del my-2"> <i class="far fa-trash-alt"></i> الغاء الموعد </button> -->
                  </div>
              </div>
          </div>
@@ -335,7 +441,7 @@
                          <p>مبنى الخدمات - الدور الرابع</p>
                      </div>
 
-                     <button class="btn del btn-block"> <i class="far fa-trash-alt"></i> الغاء الموعد </button>
+                     <!-- <button class="btn del my-2"> <i class="far fa-trash-alt"></i> الغاء الموعد </button> -->
                  </div>
              </div>
          </div>
@@ -385,7 +491,7 @@
                          <p>مبنى الخدمات - الدور الرابع</p>
                      </div>
 
-                     <button class="btn del btn-block"> <i class="far fa-trash-alt"></i> الغاء الموعد </button>
+                     <!-- <button class="btn del my-2"> <i class="far fa-trash-alt"></i> الغاء الموعد </button> -->
                  </div>
              </div>
          </div>

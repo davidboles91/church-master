@@ -260,17 +260,80 @@
     /* end booking page */
 
     /*start moa3idi page */
+
+    /*start accepted moa3idi page */
+    .accepted-mwaid h2{
+    background-color: green;
+    width: 30%;
+    height: 50px;
+    color: #fff;
+    border-radius:10px    ;
+    -webkit-border-radius:10px    ;
+    -moz-border-radius:10px    ;
+    -ms-border-radius:10px    ;
+    -o-border-radius:10px    ;
+}
+     .accepted-mwaid hr {
+         border-bottom: 3px solid green;
+         width: 4%;
+     }
+
+     .accepted-mwaid:hover hr {
+         width: 6%;
+     }
+      .accepted-mwaid-container {
+          background: linear-gradient(45deg, #c0c0c0, #00ff80);
+          min-height: 700px
+      }
+
+    /*end accepted moa3idi page */
+
+     /*start refused moa3idi page */
+        .refused-mwaid h2 {
+            background-color: #800000;
+            width: 30%;
+            height: 50px;
+            color: #fff;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+        }
+
+        .refused-mwaid hr {
+            border-bottom: 3px solid #800000;
+            width: 4%;
+        }
+
+        .refused-mwaid:hover hr {
+            width: 6%;
+        }
+
+        .refused-mwaid-container {
+            background: linear-gradient(45deg, #800000, #ffffff);
+            min-height: 700px
+        }
+
+        /*refused accepted moa3idi page */
+
     .wait-mwaid-container
     {
-        background: linear-gradient(45deg, #808080, #ffffff);
+        background:linear-gradient(45deg, #c0c0c0, #ff8000);
         min-height: 700px
     }
     .wait-mwaid h2{
     background-color: orange;
     width: 30%;
-    }
+    color: #fff;
+    border-radius:10px     ;
+    -webkit-border-radius:10px     ;
+    -moz-border-radius:10px     ;
+    -ms-border-radius:10px     ;
+    -o-border-radius:10px     ;
+}
     .wait-mwaid hr{
-        border-bottom: 1px solid rgb(236, 157, 9);
+        border-bottom: 3px solid #fff;
         width: 4%;
     }
     .wait-mwaid:hover hr {
@@ -327,7 +390,29 @@
 .card-content .btn{
     color:#fff;
     background-color: #962071;
+    margin-right:30%;
+    width:40%;
+    position: relative;
 }
+.card-content .btn:after{
+      position: absolute;
+      content: "";
+      top: 15px;
+      right: -75px;
+      width: 68px;
+      height: 2px;
+      background-color: #fff;
+}
+.card-content .btn:before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: -75px;
+    width: 68px;
+    height: 2px;
+    background-color: #fff;
+}
+
 .card-content .btn:hover {
     color: #962071;
     border: 2px solid #eee;
@@ -483,8 +568,15 @@
     .wait-mwaid h2 {
         width: 64%;
         font-size: 30px;
-
     }
+    .accepted-mwaid h2 {
+        width: 64%;
+        font-size: 25px;
+    }
+     .refused-mwaid h2 {
+         width: 64%;
+         font-size: 25px;
+     }
 }
 
 

@@ -23,11 +23,15 @@
 
 // //mwa3idi page
 
-var mw3id = document.querySelector(".wait-mwaid-container")
-    mw3id.addEventListener("click", function(e){
-    if (e.target.classList.contains("del")){
-        e.target.parentNode.parentNode.remove();
+var mw3id = document.querySelectorAll("#mwaaid")
+    mw3id.forEach((el)=>{
+             el.addEventListener("click", function(e){
+             if (e.target.classList.contains("del")){
+             e.target.parentNode.parentNode.remove();
     }
+
+    })
+   
 });
 
 // booking page 
