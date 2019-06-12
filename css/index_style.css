@@ -9,31 +9,66 @@
     -o-transition: all 1s;
 }
 
-a:hover {
-    text-decoration: none;
-}
+ a:hover {
+        text-decoration: none;
+    }
+ p  {
+        font-family: 'El Messiri', sans-serif;
+    }
+
+ h5{
+        font-family: 'Scheherazade', serif;
+    }
 /* my framework  */
 .main-color{
-    background-color: #341f97
+    background-color: #702283
 }
 .second-color {
-    background-color: #333
+    background-color: #962071
+}
+.color-font1 {
+  color: #702283
+}
+
+ .color-font2 {
+    color: #962071
 }
 
 /* my framework  */
 
 /* start nav bar */
+.notfication .dropdown-item:focus, .notfication .dropdown-item:hover ,.language .dropdown-item:focus, .language .dropdown-item:hover ,
+.profile .dropdown-item:focus, .profile .dropdown-item:hover   {
+    background-color: #702283 !important;
+    
+}
+/* .notfication-container{
+    margin-left: 180px
+} */
+.hide-max{
+    display: none;
+}
+.notfication{
+    max-width: 400px;
+    overflow: hidden;
+    font-size: 12px;
+}
+
 .fixed-nav{
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    height: 50px;
+    height: 70px;
     z-index: 55;
 }
 
 .fixed-nav a {
     color: #fff !important;
+}
+.left-side a{
+    font-size: 20px;
+
 }
 
 .profile-face img{
@@ -110,12 +145,7 @@ a:hover {
 
 
 /* start footer */
-.my-footer{
-    background-image: url(../images/map.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-}
+
 .last-section{
     color: #fff;
 }
@@ -131,53 +161,181 @@ a:hover {
 }
 .social i:hover{
     background-color: #fff;
-    color: #341f97;
+    color: #962071;
 }
 
 /* start booking page */
 .form-input{
-    border: none;
     border-bottom: 1px solid #eee;
 }
-.form-input:focus {
-    border-color: none;
-    box-shadow: none
+
+.book{
+    background-image: url(../images/church-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #962071;
+} */
+.heading{
+    color :#fff;
+    background-color: #962071;
+    width:20%;
+    margin: auto;
+
+}
+.heading hr{
+    border-bottom: 1px solid #333;
+    width:4%
 }
 
-/* end booking page */
-
-/*start moa3idi page */
-
-.card-conainer , .s-card {
-    border: 1px solid #eee;    height: 100%;
+.heading:hover hr {
+    width: 6%
+}
+.bookForm{
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 3px #333;
+    background-color: #ccc;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.card-conainer img , .s-cardimg{
-    border-radius: 10px 10px 0 0;
-    -webkit-border-radius: 10px 10px 0 0;
-    -moz-border-radius: 10px 10px 0 0;
-    -ms-border-radius: 10px 10px 0 0;
-    -o-border-radius: 10px 10px 0 0;
-    width: 100%;
-    height: 200px;
+.bookForm .btn{
+    color: #fff;
+}
+.bookForm .btn:hover {
+    color: #702283;
+    border: 1px solid #702283;
+    background-color: #fff;
+}
+.bookForm input , .bookform select ,.bookForm textarea {
+    background-color: #eee;
+    border: 1px solid #962071
+}
+.bookForm input , .bookform select  {
+    width: 30%;
+    height: 35px;
+}
+/* .special{
+    float: right!important;
+    width: 30%!important;
+} */
+    .bookForm input:focus , .bookForm select:focus , .bookForm textarea:focus {
+        border-color: #702283;
+        box-shadow: none
+    }
+    .bookForm textarea{
+        width: 90%;
+    }
+    .bookForm .test1 , .bookForm .test3 {
+        margin-right: 5%
+    }
+    .bookForm .test2 , .bookForm .test4
+    {
+        margin-left: 5%;
+    }
+    .radi{
+        width: 5%!important;
+    }
+    .radi-input{
+        width: 70% !important;
+        /* display: none !important; */
+        opacity: 0;
+    }
+    .radi-input2{
+        opacity: 0;
+    }
+
+
+
+    /* end booking page */
+
+    /*start moa3idi page */
+    .wait-mwaid-container
+    {
+        background: linear-gradient(45deg, #808080, #ffffff);
+        min-height: 700px
+    }
+    .wait-mwaid h2{
+    background-color: orange;
+    width: 30%;
+    }
+    .wait-mwaid hr{
+        border-bottom: 1px solid rgb(236, 157, 9);
+        width: 4%;
+    }
+    .wait-mwaid:hover hr {
+        width: 6%;
+    }
+
+    .card-conainer , .s-card {
+        border: 1px solid #eee;    
+        height: 100%;
+        border-radius: 10px;
+        background-color: #702283;
+        box-shadow: 2px 2px #ccc;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        position: relative;
+    }
+    .card-conainer img:hover  {
+     filter:saturate(0)   ;
+     -webkit-filter:saturate(0)   ;
+}
+
+.card-conainer img , .s-card img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+      position: absolute;
+      margin: auto;
+      top: -78px;
+      width: 50%;
+      height: 150px;
+      right: 82px;
+      box-shadow: 1px 3px 6px  #eee
 }
 .card-content i{
-    color: rgb(43, 41, 41);
     font-size: 14px;
+    color : #fff
 }
 .card-content h5{
     font-weight: bold;
     font-size: 20px;
-    margin-top: 7px
+    margin-top: 7px;
+    color: rgb(255, 227, 227);
+    line-height: 5px;
 }
 .card-content p{
     padding-right: 10px;
     font-size: 14px;
     color: rgb(156, 149, 149);
+}
+.card-content .btn{
+    color:#fff;
+    background-color: #962071;
+}
+.card-content .btn:hover {
+    color: #962071;
+    border: 2px solid #eee;
+    background-color: #fff;
+}
+.card-content .btn.focus , .card-content .btn:focus {
+    outline: 0;
+    box-shadow: none;
 }
 /*end moa3idi page */
 
@@ -208,16 +366,128 @@ a:hover {
 .hide-password{
     position: absolute;
     top: 10px;
-    left: 10px
+    left: 30px
 }
 .sign{
     background-image: url(../images/church-3.jpg);
      background-size: cover;
      background-repeat: no-repeat;
-     height: 100%;
-    
+     height: 100%; 
 }
+.sign-in {
+    width: 30%;
+    border: 1px solid #962071;
+    margin-top: 10%;
+    background-color: #d7cfda;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 1px -1px 3px #702283
+}
+    .sign-in i{
+        color: #702283
+    }
+    .sign-in input{
+    width: 90%;
+    }
+    .sign-in .form-control:focus {
+        background-color: #fff;
+        border-color: #702283;
+        outline: 0;
+        box-shadow: none;
+    }
+    .sign-in .btn {
+    color: #fff
+    }
+    .sign-in .btn:hover{
+        color: #702283;
+        background-color: #eee;
+        border: 1px solid #702283 ;
+    }
 
 /* end sign in page */
 
-/* elkhedma page */
+/*start elkhedma page */
+ .amin-khedma{
+     background-color: #eee;
+ }
+ .s-card{
+     background-color: #fff;
+     border-radius: 10px ;
+     -webkit-border-radius: 10px ;
+     -moz-border-radius: 10px ;
+     -ms-border-radius: 10px ;
+     -o-border-radius: 10px ;
+}
+
+.s-card h5{
+    color: #341f97
+}
+
+/*end  elkhedma page */
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quey */
+
+@media screen and (max-width: 996px) {
+    .navbar-collapse {
+       text-align:left; 
+       background-color: #702283;
+       margin-top: 15px;  
+    }
+    .nav-item span {
+        display: none;
+    }
+    .nav-item a {
+        margin-left: 10px;
+    }
+    .hide-min{
+        display: none;
+    }
+    .hide-max {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 920px) {
+    .sign-in {
+        width: 90%;
+        margin-top: 18%
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .heading {
+        width: 64%;
+    }
+    .bookForm input,.bookform select {
+        width: 44%;
+    }
+   .bookform select {
+        font-size: 14px;
+        
+    }
+    .wait-mwaid h2 {
+        width: 64%;
+        font-size: 30px;
+
+    }
+}
+
+
+
+
+
