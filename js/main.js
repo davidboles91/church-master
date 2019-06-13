@@ -71,6 +71,12 @@ var alertDelete = function() {
  $(".hary1").each(function(){
      $(this).select2({})
  }) ;
+ $(".hary") .select2({
+      tags: true,
+      placeholder: "اختر مكان الحجز",
+
+ })
+
  
 
 

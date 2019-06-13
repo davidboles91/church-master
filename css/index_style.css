@@ -48,6 +48,9 @@
 .hide-max{
     display: none;
 }
+
+
+
 .notfication{
     max-width: 400px;
     overflow: hidden;
@@ -259,7 +262,7 @@
     border: 1px solid #702283;
     background-color: #fff;
 }
-.bookForm input , .bookform select ,.bookForm textarea ,.select2-container--default .select2-selection--single {
+.bookForm input , .bookform select ,.bookForm textarea ,.select2-container--default .select2-selection--single ,.select2-container--default .select2-selection--multiple {
     background-color: #eee;
     border: 1px solid #962071;
 }
