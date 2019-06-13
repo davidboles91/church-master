@@ -130,15 +130,45 @@
 /* end nav bar */
 
 /* start home */
-.home img{
-    height:450px;
-    position: relative;
+.home-container{
+    margin-top:57px !important;
+    padding-top:40px;
 }
-.content{
-    position: absolute;
-    top: 40%;
-    left: 40%;
+.home-container .fc-button-group button , .fc-basicWeek-button , .fc-today-button{
+    background-color: #702283 !important;
+    padding: 4px 8px 5px;
+    color:#fff;
+    box-shadow: none
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
+
+.home-container #calendar {
+    max-width: 1000px;
+    margin: 0px auto 30px auto;
+    background-color: #eee;
+    box-shadow: 2px 2px 3px #962071,
+                 -2px -2px 3px #962071;
+}
+.home-container .fc-content {
+    background-color: #702283;
+    color: #fff;
+    text-align: center;
+}
+.pendind-table .foot-table  , .pendind-table .head-table{
+    color: #fff;
+}
+.home-container .fc-unthemed td {
+    border-color: #962071;
+}
+.pendind-table{
+    overflow: auto;
+    padding-bottom: 50px!important;
+}
+
 
 
 /* end home */
@@ -163,6 +193,13 @@
     background-color: #fff;
     color: #962071;
 }
+.church-logo:hover{
+    transform:scale(1.2) ;
+    -webkit-transform:scale(1.2) ;
+    -moz-transform:scale(1.2) ;
+    -ms-transform:scale(1.2) ;
+    -o-transform:scale(1.2) ;
+}
 
 /* start booking page */
 .form-input{
@@ -185,11 +222,15 @@
     background-color: #962071;
 } */
 .heading{
-    color :#fff;
+    color:#fff;
     background-color: #962071;
     width:20%;
     margin: auto;
-
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .heading hr{
     border-bottom: 1px solid #333;
@@ -211,38 +252,32 @@
 }
 .bookForm .btn{
     color: #fff;
+    margin-right: 37.5%
 }
 .bookForm .btn:hover {
     color: #702283;
     border: 1px solid #702283;
     background-color: #fff;
 }
-.bookForm input , .bookform select ,.bookForm textarea {
+.bookForm input , .bookform select ,.bookForm textarea ,.select2-container--default .select2-selection--single {
     background-color: #eee;
-    border: 1px solid #962071
+    border: 1px solid #962071;
 }
-.bookForm input , .bookform select  {
-    width: 30%;
-    height: 35px;
+.bookform select ,.select2-container--default .select2-selection--single {
+    height: 40px;
 }
-/* .special{
-    float: right!important;
-    width: 30%!important;
-} */
-    .bookForm input:focus , .bookForm select:focus , .bookForm textarea:focus {
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #962071;
+    color: white;
+}
+
+
+
+    .bookForm input:focus , .bookForm select:focus , .bookForm textarea:focus , .select2-container--default .select2-selection--single {
         border-color: #702283;
         box-shadow: none
     }
-    .bookForm textarea{
-        width: 90%;
-    }
-    .bookForm .test1 , .bookForm .test3 {
-        margin-right: 5%
-    }
-    .bookForm .test2 , .bookForm .test4
-    {
-        margin-left: 5%;
-    }
+  
     .radi{
         width: 5%!important;
     }
@@ -344,7 +379,7 @@
         border: 1px solid #eee;    
         height: 100%;
         border-radius: 10px;
-        background-color: #702283;
+        background-color: #962071;
         box-shadow: 2px 2px #ccc;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
@@ -368,7 +403,7 @@
       top: -78px;
       width: 50%;
       height: 150px;
-      right: 82px;
+      right: 25%;
       box-shadow: 1px 3px 6px  #eee
 }
 .card-content i{
@@ -389,7 +424,7 @@
 }
 .card-content .btn{
     color:#fff;
-    background-color: #962071;
+    background-color: #840f0f;
     margin-right:30%;
     width:40%;
     position: relative;
@@ -413,14 +448,25 @@
     background-color: #fff;
 }
 
-.card-content .btn:hover {
+.card-content .btn:hover , .card-content .btn:hover i{
     color: #962071;
-    border: 2px solid #eee;
     background-color: #fff;
 }
 .card-content .btn.focus , .card-content .btn:focus {
     outline: 0;
     box-shadow: none;
+}
+.alert{
+    color: #800000;
+    background-color: #fff;
+    font-size: 20px;
+    border-bottom :3px solid #800000;
+    width: 170px;
+    height: 50px;
+    z-index: 44444444444;
+    position: fixed;
+    top:140;
+    right:-194px;
 }
 /*end moa3idi page */
 
@@ -550,16 +596,19 @@
 @media screen and (max-width: 920px) {
     .sign-in {
         width: 90%;
-        margin-top: 18%
+        margin-top: 18%;
     }
+      .card-content .btn {
+          margin-bottom:0!important
+      }
 }
 
 @media screen and (max-width: 1000px) {
     .heading {
         width: 64%;
     }
-    .bookForm input,.bookform select {
-        width: 44%;
+    .bookForm .col-md-6 {
+       margin-top: 10px!important;
     }
    .bookform select {
         font-size: 14px;
