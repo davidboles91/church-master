@@ -1,23 +1,23 @@
 // // sign in form 
-// var hide ,  input ;
-// hide = document.querySelectorAll(".hide-password");
-// input = document.querySelectorAll(".pass-input");
+var hide ,  input ;
+hide = document.querySelectorAll(".hide-password");
+input = document.querySelectorAll(".pass-input");
 
-// hide.forEach((el)=>{
+hide.forEach((el)=>{
 
-//     el.addEventListener("click", function (e) {
-//         e.preventDefault();
-//         input.forEach((inp) => {
-//             inp.classList.toggle("show")
+    el.addEventListener("click", function (e) {
+        e.preventDefault();
+        input.forEach((inp) => {
+            inp.classList.toggle("show")
 
-//             if (inp.classList.contains("show")) {
-//                 inp.setAttribute("type", "text");
-//             } else {
-//                 inp.setAttribute("type", "password");
-//             }
-//         }); 
-//     });
-// });
+            if (inp.classList.contains("show")) {
+                inp.setAttribute("type", "text");
+            } else {
+                inp.setAttribute("type", "password");
+            }
+        }); 
+    });
+});
 // // sign in form
 
 
@@ -71,6 +71,7 @@ var alertDelete = function() {
  $(".hary1").each(function(){
      $(this).select2({})
  }) ;
+ 
  $(".hary") .select2({
       tags: true,
       placeholder: "اختر مكان الحجز",

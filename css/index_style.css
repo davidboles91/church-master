@@ -254,7 +254,7 @@
     -o-border-radius: 10px;
 }
 .bookForm .btn{
-    color: #fff;
+    color: #333;
     margin-right: 37.5%
 }
 .bookForm .btn:hover {
@@ -276,22 +276,22 @@
 
 
 
-    .bookForm input:focus , .bookForm select:focus , .bookForm textarea:focus , .select2-container--default .select2-selection--single {
-        border-color: #702283;
-        box-shadow: none
-    }
-  
-    .radi{
-        width: 5%!important;
-    }
-    .radi-input{
-        width: 70% !important;
-        /* display: none !important; */
-        opacity: 0;
-    }
-    .radi-input2{
-        opacity: 0;
-    }
+.bookForm input:focus , .bookForm select:focus , .bookForm textarea:focus , .select2-container--default .select2-selection--single {
+    border-color: #702283;
+    box-shadow: none;
+}
+
+.radi{
+    width: 5%!important;
+}
+.radi-input{
+    width: 70% !important;
+    /* display: none !important; */
+    opacity: 0;
+}
+.radi-input2{
+    opacity: 0;
+}
 
 
 
@@ -563,6 +563,90 @@
 /*end  elkhedma page */
 
 
+/* sign up page */
+
+.signup{
+    background-color: #eee;
+}
+.signup form{
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 3px #fff,
+               -2px -2px 3px #fff;
+}
+.head-signup{
+    color: #fff;
+}
+
+.signup .table-hover tbody tr:hover {
+    background-color: rgba(112, 34, 131 , .5);
+}
+.signup i{
+    color: #702283
+}
+.signup input:focus , .signup textarea:focus{
+    border-color: #702283;
+    box-shadow: none;
+}
+.head-signup:hover th {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.mobi {
+    position: relative;
+}
+.edit {
+    position: absolute;
+    background-color: #ccc;
+    color:#333;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 2px 2px 3px;
+    padding: 3px 5px;
+    top: -8px;
+    left: 23px;
+    cursor: auto;
+   display: none;
+}
+.mobi:hover .edit{
+    display: block;
+}
+.signup-table{
+    overflow: auto;
+}
+.big-button {
+    position: relative;
+    background-color: #ccffcc;
+    color: #000000;
+    font-size: 26px;
+    font-weight: 500;
+    padding: 20px;
+    height: 85px;
+    width: 30%;
+    margin-right: 35%;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-border-radius: 40px 100px 100px 100px;
+    -moz-border-radius: 40px 100px 100px 100px;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 15px 0px #702283, 0px 10px 25px rgba(0, 0, 0, .5);
+    border-color: #962071;
+    border-width: 10px;
+    border-radius: 40px 100px 100px 100px;
+    padding: 20px;
+    -ms-border-radius: 40px 100px 100px 100px;
+    -o-border-radius: 40px 100px 100px 100px;
+}
+.big-button:hover{
+    color: #702283;
+    border: 1px solid #702283;
+    background-color: #fff;
+}
 
 
 
@@ -603,6 +687,10 @@
     }
       .card-content .btn {
           margin-bottom:0!important
+      }
+      .signup .big-button {
+             width: 80%;
+             margin-right: 10%;
       }
 }
 
