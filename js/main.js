@@ -65,6 +65,17 @@ var alertDelete = function() {
  })
 
 
+// khedma page
+
+var more = document.querySelectorAll(".more");
+
+more.forEach((el) => {
+    el.addEventListener("click", function () {
+        el.parentElement.parentElement.parentElement.parentElement.classList.add("visible")      
+    })
+})
+
+
 
 // select2 library
 
@@ -79,9 +90,6 @@ var alertDelete = function() {
  })
 
  
-
-
-
 
 // calender 
 
@@ -133,4 +141,7 @@ $(document).ready(function () {
     });
 
 });
+
+
+
 
