@@ -1,4 +1,6 @@
 // // sign in form 
+$(document).ready(function () {
+
 var hide ,  input ;
 hide = document.querySelectorAll(".hide-password");
 input = document.querySelectorAll(".pass-input");
@@ -74,28 +76,56 @@ more.forEach((el) => {
         el.parentElement.parentElement.parentElement.parentElement.classList.add("visible")      
     })
 })
+//  popup
+
+    var refuse =document.querySelectorAll(".refuse")
+    var overlay = document.querySelector(".bg-modal")
+    var reason = document.getElementById("reason")
+    var input = document.getElementById("inp")
+
+
+    refuse.forEach((btn)=>{
+        btn.addEventListener("click", function () {
+        overlay.style.display = "block"
+    });
+    })
+    if (reason!=null){
+         reason.addEventListener("click", function () {
+             if (input.value !== "") {
+                 overlay.style.display = "none"
+             }
+
+         })
+
+    }
+   
+
+// alert
+
+ var alertkhedma = function () {
+    $(".alert-khedma").animate({ right: "40px" })
+    $(".alert-khedma").delay(3000);
+    $(".alert-khedma").animate({ right: '-194px' }, 700);
+}
+ var accept = document.querySelectorAll(".accept")
+ accept.forEach((ac) => {
+    ac.addEventListener("click", function () {
+        alertkhedma();
+            })
+    });
 
 
 
-// select2 library
+// end khedma page 
 
- $(".hary1").each(function(){
-     $(this).select2({})
- }) ;
- 
- $(".hary") .select2({
-      tags: true,
-      placeholder: "اختر مكان الحجز",
 
- })
+
+
 
  
 
 // calender 
 
-
-
-$(document).ready(function () {
 
     $('#calendar').fullCalendar({
         header: {

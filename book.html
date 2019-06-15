@@ -7,10 +7,12 @@
     <title> مواعيدي </title>
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="css/all.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/fullcalendar.min.css" />
     <link rel="stylesheet" href="css/index_style.css" />
+    <link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Scheherazade" rel="stylesheet">
 </head>
 
 <body>
@@ -373,6 +375,18 @@
      <script src="js/bootstrap.min.js"></script>
      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script> -->
      <script src="js/main.js"></script>
+     <!-- // select2 library -->
+<script>
+     $(".hary1").each(function(){
+     $(this).select2({})
+     }) ;
+
+     $(".hary") .select2({
+     tags: true,
+     placeholder: "اختر مكان الحجز",
+
+     })
+     </script>
      </body>
 
      </html>
