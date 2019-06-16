@@ -154,14 +154,14 @@
 
       <!-- stat sign up section -->
 
-<section class="signup">
-
-       <form class="form-group w-50 m-auto pt-5  ">
-           <div class="container mt-5">
+<section class="signup pt-5 mt-5">
+       <form class="form-group w-50 m-auto overlay-parent  ">
+         
+           <div class="container mt-3">
                <div class="row">
-
+    <div class="col-md-12 alert2 btn-danger p-3"><span class="alert-span"></span> </div>
                   <div class="col-md-6"> 
-                        <input type="text" required="required" class="form-control my-3" id="exampleInputEmail1"
+                        <input id="name" type="text" required="required" class="form-control my-3"
                             aria-describedby="emailHelp" placeholder="   الاسم الاول ">
                    </div>
 
@@ -185,14 +185,14 @@
 
 
                     <div class="col-md-6">
-                                 <input type="text" required="required" class="form-control my-3"
-                                     id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="   الخدمه ">
+                     <input id="servise" type="text" required="required" class="form-control my-3"
+                         aria-describedby="emailHelp" placeholder=" الخدمه ">
                     </div>
 
 
                     <div class="col-md-6">
-                                 <input type="number" required="required" class="form-control my-3"
-                                     id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="   موبايل 1 ">
+                                 <input id="mobile" type="number" required="required" class="form-control my-3"
+                                     aria-describedby="emailHelp" placeholder="   موبايل 1 ">
                     </div>
 
 				  <div class="col-md-6">
@@ -206,9 +206,11 @@
 				  </div>
                </div>
            </div>     
-          <button type="submit" class=" btn big-button  my-3 "> انشاء حساب</button>
-
+          <button id="submit" type="submit" class=" btn big-button  my-3 "> انشاء حساب</button>
+       
        </form>
+       
+    
        <hr>
 <!-- end sign  up -->
        <!-- staaaaaart table -->
@@ -224,7 +226,7 @@
                        </tr>
                    </thead>
                    <tbody class="body-signup">
-
+<!-- 
                        <tr>
                            <td> فادي </td>
                            <td>  الخدمه</td>
@@ -240,18 +242,18 @@
                            <span class="edit">Edit</span></a></td>
                            <div class="clearfix"></div>
 
-                       </tr>
+                       </tr> -->
                    
 
-                   </tbody>
-<!-- 
-                   <tfoot class="second-color foot-signup mb-0">
+                   </tbody >
+
+                   <tfoot class="second-color head-signup">
                       <tr>
                           <th> الاسم </th>
                           <th> الخدمه</th>
                           <th> الموبايل</th>
                       </tr>
-                   </tfoot> -->
+                   </tfoot>
                </table>
            </div>
        </section>
@@ -301,6 +303,7 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+
 
 </body>
 

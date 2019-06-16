@@ -119,7 +119,85 @@ more.forEach((el) => {
 
 
 // end khedma page 
+// sign up page
 
+    class Khadem {
+        constructor(name, service, mobile) {
+            this.name = name;
+            this.service = service;
+            this.mobile = mobile;
+        };
+    };
+    /// ui controller
+    class UiController {
+
+
+        // display ddata
+        static addBookToList(khadem) {
+            var list, row, content;
+            list = document.querySelector(".body-signup");
+            row = document.createElement("tr");
+            content = `<td>${khadem.name} </td>
+ <td> ${khadem.service} </td>
+ <td> ${khadem.mobile} <a href="#" class="float-right mobi"><i class="far fa-edit"></i>
+         <span class="edit">Edit</span></a> </td>`
+            row.innerHTML = content
+            list.appendChild(row)
+
+        };
+        // clear values
+        static clearInputs() {
+            var inputs = document.querySelectorAll(".form-control")
+            inputs.forEach((el) => {
+                el.value = ''
+                inputs[0].focus();
+            });
+        };
+
+    }
+
+
+    // get values & display data
+    var btn = document.getElementById("submit")
+
+
+
+    var displayData = function () {
+        var nameInput, serviceInput, mobileInput, alert;
+        /// inputs value
+        nameInput = document.getElementById("name").value;
+        serviceInput = document.getElementById("servise").value;
+        mobileInput = document.getElementById("mobile").value;
+        khadem = new Khadem(nameInput, serviceInput, mobileInput);
+        if (nameInput == "" || serviceInput == "" || mobileInput == "" ) {
+        alert = document.querySelector(".alert2")
+        alert.style.display = "block"
+        alert.textContent = "you should fill the fields"
+    }else {
+    document.querySelector(".alert2").style.display = "none";
+            UiController.addBookToList(khadem);
+              UiController.clearInputs();
+            };
+    };
+
+
+
+
+
+
+    // display data event
+    btn.addEventListener("click", function () {
+        displayData()
+    });
+
+
+    document.addEventListener("keypress", function (e) {
+        if (e.keyCode === 13 || e.which === 13) {
+            displayData()
+        }
+    });
+
+   
 
 
 
@@ -129,48 +207,48 @@ more.forEach((el) => {
 // calender 
 
 
-    $('#calendar').fullCalendar({
-        header: {
-            left: 'prev,next today',
-            center: 'title',
-            right: 'month,basicWeek,basicDay'
-        },
-        navLinks: true, // can click day/week names to navigate views
-        editable: true,
-        eventLimit: true, // allow "more" link when too many events
-        events: [
-            {
-                title: 'All Day Event',
-                start: '2019-06-15'
-            },
-            {
-                title: 'Long Event',
-                start: '2019-6-20',
-                end: '2019-06-30'
-            },
-            {
-                id: 999,
-                title: 'Repeating Event',
-                start: '2019-06-23T16:00:00'
-            },
-            {
-                id: 999,
-                title: 'Repeating Event',
-                start: '2019-01-16T16:00:00'
-            },
-            {
-                title: 'Conference',
-                start: '2019-06-25',
-                end: '2019-06-26'
-            },
+    // $('#calendar').fullCalendar({
+    //     header: {
+    //         left: 'prev,next today',
+    //         center: 'title',
+    //         right: 'month,basicWeek,basicDay'
+    //     },
+    //     navLinks: true, // can click day/week names to navigate views
+    //     editable: true,
+    //     eventLimit: true, // allow "more" link when too many events
+    //     events: [
+    //         {
+    //             title: 'All Day Event',
+    //             start: '2019-06-15'
+    //         },
+    //         {
+    //             title: 'Long Event',
+    //             start: '2019-6-20',
+    //             end: '2019-06-30'
+    //         },
+    //         {
+    //             id: 999,
+    //             title: 'Repeating Event',
+    //             start: '2019-06-23T16:00:00'
+    //         },
+    //         {
+    //             id: 999,
+    //             title: 'Repeating Event',
+    //             start: '2019-01-16T16:00:00'
+    //         },
+    //         {
+    //             title: 'Conference',
+    //             start: '2019-06-25',
+    //             end: '2019-06-26'
+    //         },
           
-            {
-                title: 'Click for Google',
-                url: 'http://google.com/',
-                start: '2019-06-28'
-            }
-        ]
-    });
+    //         {
+    //             title: 'Click for Google',
+    //             url: 'http://google.com/',
+    //             start: '2019-06-28'
+    //         }
+    //     ]
+    // });
 
 });
 
