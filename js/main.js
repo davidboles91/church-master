@@ -53,16 +53,16 @@ var alertDelete = function() {
 
  $(".options input:radio").change(function () {
          if ($(this).val() == "option2") {
-             $(".radi-input").css("opacity", "1");
-             $(".radi-input2").css("opacity", "0");
+             $(".radi-input").css("display", "block");
+             $(".radi-input2").css("display", "none");
          }
          else if ($(this).val() == "option3") {
-                 $(".radi-input").css("opacity", "0");
-                 $(".radi-input2").css("opacity", "1");
+             $(".radi-input").css("display", "none");
+             $(".radi-input2").css("display", "block");
          }
           else  {
-                $(".radi-input").css("opacity", "0");
-                $(".radi-input2").css("opacity", "0");
+             $(".radi-input").css("display", "none");
+             $(".radi-input2").css("display", "none");
           }
  })
 
@@ -90,9 +90,11 @@ more.forEach((el) => {
     });
     })
     if (reason!=null){
-         reason.addEventListener("click", function () {
+         reason.addEventListener("click", function (e) {
              if (input.value !== "") {
+                 e.preventDefault();
                  overlay.style.display = "none"
+                 console.log(input.value)
              }
 
          })
