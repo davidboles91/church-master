@@ -186,9 +186,12 @@ more.forEach((el) => {
 
 
     // display data event
-    btn.addEventListener("click", function () {
-        displayData()
-    });
+    if(btn != null){
+        btn.addEventListener("click", function () {
+            displayData()
+        });
+    }
+    
 
 
     document.addEventListener("keypress", function (e) {
@@ -207,48 +210,48 @@ more.forEach((el) => {
 // calender 
 
 
-    // $('#calendar').fullCalendar({
-    //     header: {
-    //         left: 'prev,next today',
-    //         center: 'title',
-    //         right: 'month,basicWeek,basicDay'
-    //     },
-    //     navLinks: true, // can click day/week names to navigate views
-    //     editable: true,
-    //     eventLimit: true, // allow "more" link when too many events
-    //     events: [
-    //         {
-    //             title: 'All Day Event',
-    //             start: '2019-06-15'
-    //         },
-    //         {
-    //             title: 'Long Event',
-    //             start: '2019-6-20',
-    //             end: '2019-06-30'
-    //         },
-    //         {
-    //             id: 999,
-    //             title: 'Repeating Event',
-    //             start: '2019-06-23T16:00:00'
-    //         },
-    //         {
-    //             id: 999,
-    //             title: 'Repeating Event',
-    //             start: '2019-01-16T16:00:00'
-    //         },
-    //         {
-    //             title: 'Conference',
-    //             start: '2019-06-25',
-    //             end: '2019-06-26'
-    //         },
+    $('#calendar').fullCalendar({
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,basicWeek,basicDay'
+        },
+        navLinks: true, // can click day/week names to navigate views
+        editable: true,
+        eventLimit: true, // allow "more" link when too many events
+        events: [
+            {
+                title: 'All Day Event',
+                start: '2019-06-15'
+            },
+            {
+                title: 'Long Event',
+                start: '2019-6-20',
+                end: '2019-06-30'
+            },
+            {
+                id: 999,
+                title: 'Repeating Event',
+                start: '2019-06-23T16:00:00'
+            },
+            {
+                id: 999,
+                title: 'Repeating Event',
+                start: '2019-01-16T16:00:00'
+            },
+            {
+                title: 'Conference',
+                start: '2019-06-25',
+                end: '2019-06-26'
+            },
           
-    //         {
-    //             title: 'Click for Google',
-    //             url: 'http://google.com/',
-    //             start: '2019-06-28'
-    //         }
-    //     ]
-    // });
+            {
+                title: 'Click for Google',
+                url: 'http://google.com/',
+                start: '2019-06-28'
+            }
+        ]
+    });
 
 });
 

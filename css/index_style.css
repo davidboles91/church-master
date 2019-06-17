@@ -144,6 +144,26 @@
 .nav-item:hover .border-4 {
      height: 77%;
 }
+.navbar-toggle{
+    color: #fff;
+}
+.navbar-toggler:focus{
+    outline: none!important;
+}
+.fc-toolbar .fc-left {
+    padding-left: 85px;
+    margin-top: 10px;
+}
+.fc-toolbar .fc-right {
+    padding-right: 85px;
+    margin-top: 10px;
+}
+.fc-center {
+    color: #0b91b6;
+    font-weight: bold;
+    font-size: 36px!important;
+    margin-top: 20px;
+}
 
 
 
@@ -156,6 +176,7 @@
 .home-container{
     margin-top:57px !important;
     padding-top:40px;
+    background-color: #eee;
 }
 .home-container .fc-button-group button , .fc-basicWeek-button , .fc-today-button{
     background-color: #0b91b6 !important;
@@ -179,7 +200,7 @@
     max-width: 1000px;
     margin: 0px auto 30px auto;
     border-radius:5px;
-    background-color: #ccc;
+    background-color: #fff;
     box-shadow: 2px 2px 3px #333,                 
                -2px -2px 3px #333;
   font-family: 'Scheherazade', serif;
@@ -188,7 +209,7 @@
 
 }
 .home-container .fc-content {
-    background-color: #fff;
+    background-color: yellow;
     color: #333;
     text-align: center;
     border: 1px solid
@@ -204,7 +225,7 @@
 }
 .home-container .fc-unthemed td {
     
-    border: 1px dashed #fff;
+    border: 1px solid #dddddd;
 }
 .pendind-table{
     overflow: auto;
@@ -221,6 +242,11 @@
 
 
 /* start footer */
+.last-section p a{
+    color: #eee;
+    font-weight: bold;
+    font-size: 20px;
+}
 
 .last-section{
     color: #fff;
@@ -1065,6 +1091,9 @@ input {
      }
      .card-back .btn{
          margin: 5px
+     }
+     .radi-input{
+         width: 40%!important;
      }
 
 
