@@ -1095,6 +1095,22 @@ input {
      .radi-input{
          width: 40%!important;
      }
+     .fc-toolbar .fc-left {
+         padding-left: 0px;
+         margin-top: 5px;
+     }
+
+     .fc-toolbar .fc-right {
+         padding-right: 0px;
+         margin-top: 5px;
+     }
+
+     .fc-center {
+         color: #0b91b6;
+         font-weight: bold;
+         font-size:18px !important;
+         margin-top: 5px;
+     }
 
 
 }
