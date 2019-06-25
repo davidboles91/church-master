@@ -418,7 +418,7 @@
 
     /*start accepted moa3idi page */
     .accepted-mwaid h2{
-    background-color: #9cca43;
+    background-color: green;
     width: 30%;
     height: 50px;
     color: #fff;
@@ -429,7 +429,7 @@
     -o-border-radius:10px    ;
 }
      .accepted-mwaid hr {
-         border-bottom: 3px solid #9cca43;
+         border-bottom: 3px solid green;
          width: 4%;
      }
      
@@ -442,7 +442,7 @@
           min-height: 700px
       }
       .accepted-mwaid-container h5{
-          color:#9cca43
+          color:green
       }
 
     /*end accepted moa3idi page */
@@ -504,6 +504,7 @@
         border: 1px solid #eee;    
         border-radius: 10px;
         background-color: #fff;
+        height: 100%;
         
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
@@ -549,7 +550,7 @@
       width: 50%;
       height: 150px;
       right: 25%;
-      box-shadow: 1px 3px 6px  #eee
+      box-shadow: -2px -5px 9px -3px #0b91b6;
 }
 .card-conainer img{
   top: -78px;
@@ -557,9 +558,17 @@
 .s-card img{
     top: -30px;
 }
-.card-content i{
-    font-size: 14px;
-    color : #373737
+.accepted-mwaid-container .card-content i{
+    font-size: 18px;
+    color : green
+}
+.wait-mwaid-container .card-content i{
+    font-size: 18px;
+    color : orange
+}
+.refused-mwaid-container .card-content i{
+    font-size: 18px;
+    color : #f43c2f
 }
 .card-content h5{
     font-weight: bold;
@@ -567,9 +576,9 @@
     margin-top: 7px;
 }
 .card-content p{
-    padding-right: 10px;
-    font-size: 16px;
+    font-size: 18px;
     color: rgb(20, 17, 17);
+    font-weight: 800;
 }
 .card-content .btn{
     color:#fff;
@@ -711,12 +720,12 @@
 }
 .s-card h5{
     color: #0b91b6;
-    font-size: 18px
+    font-size: 14px
 }
 
 
 .all-card{
-       height: 500px;
+       height: 450px;
        border-radius:10px;
        position: relative;
        -webkit-border-radius:10px;
@@ -744,18 +753,26 @@
 }
 
 .card-back .s-card {
-    background-color: #eee;
+    background-color: #fff;
     box-shadow: 2px 2px 3px #0b91b6,
                 -2px -2px 3px #0b91b6;
+    position: relative;
 }
 .card-back .s-card .btn {
     background-color: #0b91b6;
-    width: 80%;
-    margin-right: 10%;
     color: #fff;
-     font-weight: bold;
-     font-size:18px;
+    font-weight: bold;
+    font-size:18px;
 }
+.card-back .s-card .btn:hover{
+    background-color: #fff;
+    color: #0b91b6;
+    border: 1px solid #0b91b6;
+}
+.card-back .s-card .btn:hover  i{
+    color: #0b91b6 !important;
+}
+
 .card-back .s-card .btn i , .more i{
     color: #fff;
 }
@@ -773,7 +790,7 @@
 
 .s-card p{
     font-weight: bold;
-    font-size: 20px
+    font-size: 16px
 }
 
 .card-back {
@@ -783,6 +800,9 @@
     -moz-transform: translate(1);
     -ms-transform: translate(1);
     -o-transform: translate(1);
+    height: 100%;
+    max-height: 80px;
+    position: relative;
 }
 .card-front {
     transform: rotateY(0);
@@ -792,6 +812,7 @@
     -ms-transform: rotateY(0);
     -o-transform: rotateY(0);
     max-height: 100px;
+   
 }
 
 .visible .card-front {
@@ -812,7 +833,7 @@
 
 
 /* // MODAL STARTS HERE // */
-.amin-khedma {
+.amin-khedma .container {
     position: relative;
 }
 
@@ -828,7 +849,7 @@
     display: none;
     justify-content: center;
     align-items: center;
-    z-index:55555555555;
+    z-index:1;
 }
 
 .modal-contents {
@@ -854,7 +875,7 @@ input {
     border: 1px solid gray;
 }
 
-/* .close {
+.close {
     position: absolute;
     top: 0;
     right: 10px;
@@ -862,7 +883,7 @@ input {
     color: #333;
     transform: rotate(45deg);
     cursor: pointer;
-} */
+}
 #inp:focus{
     border-color: #0b91b6;
     box-shadow: none;
@@ -886,14 +907,39 @@ input {
     position: fixed;
     top: 140px;
     right: -194px;
+    font-weight: bold;
+
+}
+.alert2-khedma {
+    color: red;
+    background-color: #fff;
+    font-size: 28px;
+    border-bottom: 3px solid red;
+    width: 130px;
+    height: 50px;
+    padding: 5px 10px ;
+    z-index: 44444444444;
+    position: fixed;
+    top: 140px;
+    right: -194px;
+    text-align: center;
+    font-weight: bold;
 }
 .card-back i{
-    color: #000000;
+    color: #0b91b6;
 }
 .alert2{
     display: none;
 }
 
+.card-front p{
+    font-size: 16px;
+    margin: 25px 0 
+}
+
+.popup .bg-modal{
+    display: block;
+}
 
 
 /*end  elkhedma page */
@@ -1087,7 +1133,7 @@ input {
      }
 
      .all-card {
-         height: 700px;
+         height: 600px;
      }
      .card-back .btn{
          margin: 5px
@@ -1111,6 +1157,18 @@ input {
          font-size:18px !important;
          margin-top: 5px;
      }
+     .s-card p{
+        font-size: 18px
+    }
+    .s-card h5{
+        font-size: 18px
+    }
+     .card-front p{
+        font-size: 18px;
+    }
+    /* .card-back .s-card {
+        height: 750px;
+    } */
 
 
 }

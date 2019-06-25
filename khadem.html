@@ -1,3 +1,4 @@
+
 <html lang="en" dir="rtl">
 
 <head>
@@ -8,8 +9,6 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/fullcalendar.min.css" />
     <link rel="stylesheet" href="css/index_style.css" />
     <link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Scheherazade" rel="stylesheet">
@@ -150,7 +149,7 @@
               
             </ul>
 		 </div>
-        </nav>
+    </nav>
     <!-- end nav bar -->
 
     <!-- stat khadem section -->
@@ -162,432 +161,719 @@
      </div>
         <div class="container mt-4">
 
-             <div class="alert-khedma">
-                 <p>تمت الموافقه بنجاح</p>
-             </div>
+        <div class="alert-khedma">
+            <p>تمت الموافقه بنجاح</p>
+        </div>
+
+        <div class="alert2-khedma">
+            <p> تم الرفض </p>
+        </div>
            <div class="row">
 			   
 			   
-			   <!-- Modal Section -->
+               <!-- Modal Section -->
+   	
+    <!-- start card -->
+    <div class="col-md-4 my-2 w-100 ">
+        <div class="all-card">
+        
+<!--		  start card front   -->
+        <div class="card-front my-5 card-face">
+        <div class="s-card my-5">
+            <img class="img-fluid" src="./images/church-1.jpg" alt="">
+            <div class=" row s-conent mx-1 mt-2 pt-1">
+                
+                <div class="col-md-12 my-2">
+                <h5 class="text-center display-4 mt-5 pt-3">نشاط دراسه الكتاب</h5>
+                </div>
 
- <div class="bg-modal ">
-	<div class="modal-contents col-md-12">
+                <div class="col-md-6 my-2">
+                <p> <i class="fas fa-calendar-alt"></i> 2019 الاحد 5 مارس </p>
+                </div>
 
-		<!-- <div class="close">+</div> -->
+                <div class="col-md-6 my-2">
+                    <p><i class="far fa-clock"></i> 7مساء حتى 9 مساء</p>
+                </div>
+
+                <div class="col-md-6 my-2">
+                    <p> <i class="fas fa-user-check"></i>  توني رشدي</p>
+                </div>
+
+                <div class="col-md-6 my-2">
+                    <p><i class="fas fa-map-marker"></i> غرفه 301 </p>
+                </div>
+                    <button class="btn more mb-1 "> المزيد </button>
+                </div>
+            </div>
+        </div>
+        <!--		  end card front -->
+                        
+            <!--		  start card back-->
+        <div class="card-back my-5 pt-5  card-face">
+            
+        <div class="s-card my-5">
+    <div class="row mt-5 mx-1">
+
+        <div class="col-md-12">
+            <h5 class="text-center pt-2"> <i class="fas fa-book"></i> اسره لباس الصليب - نشاط دراسه كتاب</h5>
+        </div>
+
+    <div class="col-md-6 ">
+            <p> <i class="fas fa-user-check"></i>  توني رشدي </p>
+    </div>
+
+    <div class="col-md-6 ">
+        <p> <i class="fas fa-calendar-alt"></i> الاحد 5 مارس 2019 </p>
+    </div>
+
+        <div class="col-md-6 ">
+         <p> <i class="far fa-clock"></i>  7مساء حتى 9 مساء</p>
+        </div>
+
+        <div class="col-md-6 ">
+            <p> <i class="fas fa-redo"></i> اسبوعي</p>
+        </div>
+
+        <div class="col-md-6 ">
+         <p> <i class="fas fa-hourglass-start"></i> 3شهوور </p>
+        </div>
+
+        <div class="col-md-6 ">
+            <p> <i class="fas fa-map-marker"></i>  مبنى الخدمات-الدور الرابع </p>
+        </div>
+
+        <div class="col-md-12 ">
+            <h5> <i class="fas fa-info-circle"></i> التفاصيل</h5>
+            <p>تفااااااااااااااصيل التفاصيلال  تفاصيلالتفا  صيل ا
+                    تفااااااااااااااصيل التفاصيلال  تفاصيلالتفا  صيل التفاصيل لتفاصيل </p>
+            </div>
+
+    <div class="col-md-12 bottom">
+    <div class="float-left">
+        <button class="accept btn remove"> <i class="fas fa-check"></i> اوافق </button>
+    </div>
+    
+    <div class="float-right">
+        <button class="btn refuse remov"> <i class="far fa-times-circle"></i> ارفض</button>
+    </div>
+    <div class="clearfix"></div>
+
+</div>
+<div class="bg-modal ">
+    <div class="modal-contents col-md-12">
+
+        <div class="close">+</div>
        <div class="">
-		<form >
-			<input class="form-control" id="inp" required type="text" placeholder=" اكتب السبب ">
-			<button id="reason" class="btn "> موافق</button>
-		</form>
+        <form >
+            <input class="form-control mt-5" id="inp" required type="text" placeholder=" اكتب السبب ">
+            <button id="reason" class="btn"> موافق</button>
+        </form>
       </div>
-	</div>
+    </div>
  </div>
-			   
-			   
-               <!-- start card -->
-               <div class="col-md-4 my-2 w-100 ">
-				   <div class="all-card">
-				   
-         <!--		  start card front   -->
-				   <div class="card-front my-5 card-face">
-                   <div class="s-card my-5">
-                       <img class="img-fluid" src="./images/church-1.jpg" alt="">
-                       <div class=" row s-conent mx-5 mt-2 pt-1">
-						   
-						   <div class="col-md-12 my-2">
-                            <h5 class="text-center display-4 mt-5 pt-3">نشاط دراسه الكتاب</h5>
-						  </div>
 
-                            <div class="col-md-6 my-2">
-							<p> <i class="fas fa-calendar-alt"></i> 2019 الاحد 5 مارس </p>
-						  </div>
+</div>                        
+</div>
 
-						  <div class="col-md-6 my-2">
-							  <p><i class="far fa-clock"></i> 7مساء حتى 9 مساء</p>
-						  </div>
+        </div>
+                            <!--		  end card back-->
 
-						   <div class="col-md-6 my-2">
-							  <p> <i class="fas fa-user-check"></i>  توني رشدي</p>
-						   </div>
+    
+                    </div>  
+    </div>
+    <!-- end card -->
 
-						   <div class="col-md-6">
-							   <p><i class="fas fa-map-marker"></i> غرفه 301 </p>
-						   </div>
-							  <button class="btn more mb-1 "> المزيد </button>
-                         </div>
-					  </div>
-                   </div>
-		<!--		  end card front -->
-					   
-					  <!--		  start card back-->
-					<div class="card-back  card-face">
-					   
-				    <div class="s-card">
-				<div class="row my-2 mx-2">
-
-                    <div class="col-md-12">
-                      <h5 class="text-center"> <i class="fas fa-book"></i> اسره لباس الصليب - نشاط دراسه كتاب</h5>
-                    </div>
-
-                <div class="col-md-12 ">
-                  <h5> <i class="fas fa-info-circle"></i> التفاصيل</h5>
-                    <p>تفااااااااااااااصيل</p>
-                 </div>
-
-                <div class="col-md-4 col-md-6 ">
-                     <h5> <i class="fas fa-user-check"></i> الخادم المسئول</h5>
-                     <p>توني رشدي</p>
-                </div>
-
-                <div class="col-md-4 col-md-">
-                   <h5> <i class="fas fa-calendar-alt"></i> اليوم</h5>
-                  <p>الاحد 5 مارس 2019</p>
-                </div>
-
-                 <div class="col-md-4 col-md-6 ">
-                           <h5> <i class="far fa-clock"></i> الوقت</h5>
-                           <p> 7مساء حتى 9 مساء</p>
-                 </div>
-
-                  <div class="col-md-4 col-md-6 ">
-                       <h5> <i class="fas fa-redo"></i> التكرار</h5>
-                       <p>اسبوعي</p>
-                  </div>
-
-                   <div class="col-md-4 col-md-6 ">
-                         <h5> <i class="fas fa-hourglass-start"></i> فتره الحجز</h5>
-                         <p>3شهوور</p>
-                   </div>
-
-                    <div class="col-md-4 col-md-6 ">
-                        <h5> <i class="fas fa-map-marker"></i> مكان الحجز</h5>
-                        <p>مبنى الخدمات-الدور الرابع</p>
-                    </div>
-                <div class="col-md-6 col-md-6">
-                    <button class="accept btn "> <i class="fas fa-check"></i> اوافق </button>
-                </div>
-                
-                <div class="col-md-6 col-md-6">
-                    <button class="btn refuse"> <i class="far fa-times-circle"></i> ارفض</button>
-                </div>
-            </div>                        
-         </div>
-   
-	                  </div>
-				   	   <!--		  end card back-->
-
-	
-				 </div>  
-               </div>
-               <!-- end card -->
-			   
-			   
-						   
-               <!-- start card -->
-               <div class="col-md-4 my-2 w-100 ">
-				   <div class="all-card">
-				   
-         <!--		  start card front   -->
-				   <div class="card-front my-5 card-face">
-                   <div class="s-card my-5">
-                       <img class="img-fluid" src="./images/church-1.jpg" alt="">
-                       <div class=" row s-conent mx-5 mt-2 pt-1">
-						   
-						   <div class="col-md-12 my-2">
-                            <h5 class="text-center display-4 mt-5 pt-3">نشاط دراسه الكتاب</h5>
-						  </div>
-
-                            <div class="col-md-6 my-2">
-							<p> <i class="fas fa-calendar-alt"></i> 2019 الاحد 5 مارس </p>
-						  </div>
-
-						  <div class="col-md-6 my-2">
-							  <p><i class="far fa-clock"></i> 7مساء حتى 9 مساء</p>
-						  </div>
-
-						   <div class="col-md-6 my-2">
-							  <p> <i class="fas fa-user-check"></i>  توني رشدي</p>
-						   </div>
-
-						   <div class="col-md-6">
-							   <p><i class="fas fa-map-marker"></i> غرفه 301 </p>
-						   </div>
-							  <button class="btn more mb-1 "> المزيد </button>
-                         </div>
-					  </div>
-                   </div>
-		<!--		  end card front -->
-					   
-					  <!--		  start card back-->
-					<div class="card-back  card-face">
-					   
-				    <div class="s-card">
-				<div class="row my-2 mx-2">
-
-                    <div class="col-md-12">
-                      <h5 class="text-center"> <i class="fas fa-book"></i> اسره لباس الصليب - نشاط دراسه كتاب</h5>
-                    </div>
-
-                <div class="col-md-12 ">
-                  <h5> <i class="fas fa-info-circle"></i> التفاصيل</h5>
-                    <p>تفااااااااااااااصيل</p>
-                 </div>
-
-                <div class="col-md-4 col-md-6 ">
-                     <h5> <i class="fas fa-user-check"></i> الخادم المسئول</h5>
-                     <p>توني رشدي</p>
-                </div>
-
-                <div class="col-md-4 col-md-">
-                   <h5> <i class="fas fa-calendar-alt"></i> اليوم</h5>
-                  <p>الاحد 5 مارس 2019</p>
-                </div>
-
-                 <div class="col-md-4 col-md-6 ">
-                           <h5> <i class="far fa-clock"></i> الوقت</h5>
-                           <p> 7مساء حتى 9 مساء</p>
-                 </div>
-
-                  <div class="col-md-4 col-md-6 ">
-                       <h5> <i class="fas fa-redo"></i> التكرار</h5>
-                       <p>اسبوعي</p>
-                  </div>
-
-                   <div class="col-md-4 col-md-6 ">
-                         <h5> <i class="fas fa-hourglass-start"></i> فتره الحجز</h5>
-                         <p>3شهوور</p>
-                   </div>
-
-                    <div class="col-md-4 col-md-6 ">
-                        <h5> <i class="fas fa-map-marker"></i> مكان الحجز</h5>
-                        <p>مبنى الخدمات-الدور الرابع</p>
-                    </div>
-                <div class="col-md-6 col-md-6">
-                    <button class="btn accept "> <i class="fas fa-check"></i> اوافق </button>
-                </div>
-                
-                <div class="col-md-6 col-md-6">
-                    <button class="btn refuse"> <i class="far fa-times-circle"></i> ارفض</button>
-                </div>
-            </div>                        
-         </div>
-   
-	                  </div>
-				   	   <!--		  end card back-->
-
-	
-				 </div>  
-               </div>
-               <!-- end card -->
-			   
-			   			   
-               <!-- start card -->
-               <div class="col-md-4 my-2 w-100 ">
-				   <div class="all-card">
-				   
-         <!--		  start card front   -->
-				   <div class="card-front my-5 card-face">
-                   <div class="s-card my-5">
-                       <img class="img-fluid" src="./images/church-1.jpg" alt="">
-                       <div class=" row s-conent mx-5 mt-2 pt-1">
-						   
-						   <div class="col-md-12 my-2">
-                            <h5 class="text-center display-4 mt-5 pt-3">نشاط دراسه الكتاب</h5>
-						  </div>
-
-                            <div class="col-md-6 my-2">
-							<p> <i class="fas fa-calendar-alt"></i> 2019 الاحد 5 مارس </p>
-						  </div>
-
-						  <div class="col-md-6 my-2">
-							  <p><i class="far fa-clock"></i> 7مساء حتى 9 مساء</p>
-						  </div>
-
-						   <div class="col-md-6 my-2">
-							  <p> <i class="fas fa-user-check"></i>  توني رشدي</p>
-						   </div>
-
-						   <div class="col-md-6">
-							   <p><i class="fas fa-map-marker"></i> غرفه 301 </p>
-						   </div>
-							  <button class="btn more mb-1 "> المزيد </button>
-                         </div>
-					  </div>
-                   </div>
-		<!--		  end card front -->
-					   
-					  <!--		  start card back-->
-					<div class="card-back  card-face">
-					   
-				    <div class="s-card">
-				<div class="row my-2 mx-2">
-
-                    <div class="col-md-12">
-                      <h5 class="text-center"> <i class="fas fa-book"></i> اسره لباس الصليب - نشاط دراسه كتاب</h5>
-                    </div>
-
-                <div class="col-md-12 ">
-                  <h5> <i class="fas fa-info-circle"></i> التفاصيل</h5>
-                    <p>تفااااااااااااااصيل</p>
-                 </div>
-
-                <div class="col-md-4 col-md-6 ">
-                     <h5> <i class="fas fa-user-check"></i> الخادم المسئول</h5>
-                     <p>توني رشدي</p>
-                </div>
-
-                <div class="col-md-4 col-md-">
-                   <h5> <i class="fas fa-calendar-alt"></i> اليوم</h5>
-                  <p>الاحد 5 مارس 2019</p>
-                </div>
-
-                 <div class="col-md-4 col-md-6 ">
-                           <h5> <i class="far fa-clock"></i> الوقت</h5>
-                           <p> 7مساء حتى 9 مساء</p>
-                 </div>
-
-                  <div class="col-md-4 col-md-6 ">
-                       <h5> <i class="fas fa-redo"></i> التكرار</h5>
-                       <p>اسبوعي</p>
-                  </div>
-
-                   <div class="col-md-4 col-md-6 ">
-                         <h5> <i class="fas fa-hourglass-start"></i> فتره الحجز</h5>
-                         <p>3شهوور</p>
-                   </div>
-
-                    <div class="col-md-4 col-md-6 ">
-                        <h5> <i class="fas fa-map-marker"></i> مكان الحجز</h5>
-                        <p>مبنى الخدمات-الدور الرابع</p>
-                    </div>
-                <div class="col-md-6 col-md-6">
-                    <button class="btn accept "> <i class="fas fa-check"></i> اوافق </button>
-                </div>
-                
-                <div class="col-md-6 col-md-6">
-                    <button class="btn refuse"> <i class="far fa-times-circle"></i> ارفض</button>
-                </div>
-            </div>                        
-         </div>
-   
-	                  </div>
-				   	   <!--		  end card back-->
-
-	
-				 </div>  
-               </div>
-               <!-- end card -->
-			   
-			   
-			   			   
-               <!-- start card -->
-               <div class="col-md-4 my-2 w-100 ">
-				   <div class="all-card">
-				   
-         <!--		  start card front   -->
-				   <div class="card-front my-5 card-face">
-                   <div class="s-card my-5">
-                       <img class="img-fluid" src="./images/church-1.jpg" alt="">
-                       <div class=" row s-conent mx-5 mt-2 pt-1">
-						   
-						   <div class="col-md-12 my-2">
-                            <h5 class="text-center display-4 mt-5 pt-3">نشاط دراسه الكتاب</h5>
-						  </div>
-
-                            <div class="col-md-6 my-2">
-							<p> <i class="fas fa-calendar-alt"></i> 2019 الاحد 5 مارس </p>
-						  </div>
-
-						  <div class="col-md-6 my-2">
-							  <p><i class="far fa-clock"></i> 7مساء حتى 9 مساء</p>
-						  </div>
-
-						   <div class="col-md-6 my-2">
-							  <p> <i class="fas fa-user-check"></i>  توني رشدي</p>
-						   </div>
-
-						   <div class="col-md-6">
-							   <p><i class="fas fa-map-marker"></i> غرفه 301 </p>
-						   </div>
-							  <button class="btn more mb-1 "> المزيد </button>
-                         </div>
-					  </div>
-                   </div>
-		<!--		  end card front -->
-					   
-					  <!--		  start card back-->
-					<div class="card-back  card-face">
-					   
-				    <div class="s-card">
-				<div class="row my-2 mx-2">
-
-                    <div class="col-md-12">
-                      <h5 class="text-center"> <i class="fas fa-book"></i> اسره لباس الصليب - نشاط دراسه كتاب</h5>
-                    </div>
-
-                <div class="col-md-12 ">
-                  <h5> <i class="fas fa-info-circle"></i> التفاصيل</h5>
-                    <p>تفااااااااااااااصيل</p>
-                 </div>
-
-                <div class="col-md-4 col-md-6 ">
-                     <h5> <i class="fas fa-user-check"></i> الخادم المسئول</h5>
-                     <p>توني رشدي</p>
-                </div>
-
-                <div class="col-md-4 col-md-">
-                   <h5> <i class="fas fa-calendar-alt"></i> اليوم</h5>
-                  <p>الاحد 5 مارس 2019</p>
-                </div>
-
-                 <div class="col-md-4 col-md-6 ">
-                           <h5> <i class="far fa-clock"></i> الوقت</h5>
-                           <p> 7مساء حتى 9 مساء</p>
-                 </div>
-
-                  <div class="col-md-4 col-md-6 ">
-                       <h5> <i class="fas fa-redo"></i> التكرار</h5>
-                       <p>اسبوعي</p>
-                  </div>
-
-                   <div class="col-md-4 col-md-6 ">
-                         <h5> <i class="fas fa-hourglass-start"></i> فتره الحجز</h5>
-                         <p>3شهوور</p>
-                   </div>
-
-                    <div class="col-md-4 col-md-6 ">
-                        <h5> <i class="fas fa-map-marker"></i> مكان الحجز</h5>
-                        <p>مبنى الخدمات-الدور الرابع</p>
-                    </div>
-                <div class="col-md-6 col-md-6">
-                    <button class="btn accept"> <i class="fas fa-check"></i> اوافق </button>
-                </div>
-                
-                <div class="col-md-6 col-md-6">
-                    <button class="btn refuse"> <i class="far fa-times-circle"></i> ارفض</button>
-                </div>
-            </div>                        
-         </div>
-   
-	                  </div>
-				   	   <!--		  end card back-->
-
-	
-				 </div>  
-               </div>
-               <!-- end card -->
-		
-			   
-			
-
-		
-
+      <!-- start card -->
+      <div class="col-md-4 my-2 w-100 ">
+            <div class="all-card">
+            
+    <!--		  start card front   -->
+            <div class="card-front my-5 card-face">
+            <div class="s-card my-5">
+                <img class="img-fluid" src="./images/church-1.jpg" alt="">
+                <div class=" row s-conent mx-1 mt-2 pt-1">
                     
+                    <div class="col-md-12 my-2">
+                    <h5 class="text-center display-4 mt-5 pt-3">نشاط دراسه الكتاب</h5>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                    <p> <i class="fas fa-calendar-alt"></i> 2019 الاحد 5 مارس </p>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                        <p><i class="far fa-clock"></i> 7مساء حتى 9 مساء</p>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                        <p> <i class="fas fa-user-check"></i>  توني رشدي</p>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                        <p><i class="fas fa-map-marker"></i> غرفه 301 </p>
+                    </div>
+                        <button class="btn more mb-1 "> المزيد </button>
+                    </div>
+                </div>
+            </div>
+            <!--		  end card front -->
+                            
+                <!--		  start card back-->
+            <div class="card-back my-5 pt-5  card-face">
+                
+            <div class="s-card my-5">
+        <div class="row mt-5 mx-1">
+    
+            <div class="col-md-12">
+                <h5 class="text-center pt-2"> <i class="fas fa-book"></i> اسره لباس الصليب - نشاط دراسه كتاب</h5>
+            </div>
+    
+        <div class="col-md-6 ">
+                <p> <i class="fas fa-user-check"></i>  توني رشدي </p>
+        </div>
+    
+        <div class="col-md-6 ">
+            <p> <i class="fas fa-calendar-alt"></i> الاحد 5 مارس 2019 </p>
+        </div>
+    
+            <div class="col-md-6 ">
+             <p> <i class="far fa-clock"></i>  7مساء حتى 9 مساء</p>
+            </div>
+    
+            <div class="col-md-6 ">
+                <p> <i class="fas fa-redo"></i> اسبوعي</p>
+            </div>
+    
+            <div class="col-md-6 ">
+             <p> <i class="fas fa-hourglass-start"></i> 3شهوور </p>
+            </div>
+    
+            <div class="col-md-6 ">
+                <p> <i class="fas fa-map-marker"></i>  مبنى الخدمات-الدور الرابع </p>
+            </div>
+    
+            <div class="col-md-12 ">
+                <h5> <i class="fas fa-info-circle"></i> التفاصيل</h5>
+                <p>تفااااااااااااااصيل التفاصيلال  تفاصيلالتفا  صيل ا
+                        تفااااااااااااااصيل التفاصيلال  تفاصيلالتفا  صيل التفاصيل لتفاصيل </p>
+                </div>
+    
+        <div class="col-md-12 bottom">
+        <div class="float-left">
+            <button class="accept btn remove"> <i class="fas fa-check"></i> اوافق </button>
+        </div>
+        
+        <div class="float-right">
+            <button class="btn refuse remov"> <i class="far fa-times-circle"></i> ارفض</button>
+        </div>
+        <div class="clearfix"></div>
+    
+    </div>
+    <div class="bg-modal ">
+        <div class="modal-contents col-md-12">
+    
+            <div class="close">+</div>
+           <div class="">
+            <form >
+                <input class="form-control mt-5" id="inp" required type="text" placeholder=" اكتب السبب ">
+                <button id="reason" class="btn"> موافق</button>
+            </form>
+          </div>
+        </div>
+     </div>
+    
+    </div>                        
+    </div>
+    
+            </div>
+                                <!--		  end card back-->
+    
+        
+                        </div>  
+        </div>
+        <!-- end card -->
 
+          <!-- start card -->
+    <div class="col-md-4 my-2 w-100 ">
+            <div class="all-card">
+            
+    <!--		  start card front   -->
+            <div class="card-front my-5 card-face">
+            <div class="s-card my-5">
+                <img class="img-fluid" src="./images/church-1.jpg" alt="">
+                <div class=" row s-conent mx-1 mt-2 pt-1">
+                    
+                    <div class="col-md-12 my-2">
+                    <h5 class="text-center display-4 mt-5 pt-3">نشاط دراسه الكتاب</h5>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                    <p> <i class="fas fa-calendar-alt"></i> 2019 الاحد 5 مارس </p>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                        <p><i class="far fa-clock"></i> 7مساء حتى 9 مساء</p>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                        <p> <i class="fas fa-user-check"></i>  توني رشدي</p>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                        <p><i class="fas fa-map-marker"></i> غرفه 301 </p>
+                    </div>
+                        <button class="btn more mb-1 "> المزيد </button>
+                    </div>
+                </div>
+            </div>
+            <!--		  end card front -->
+                            
+                <!--		  start card back-->
+            <div class="card-back my-5 pt-5  card-face">
+                
+            <div class="s-card my-5">
+        <div class="row mt-5 mx-1">
+    
+            <div class="col-md-12">
+                <h5 class="text-center pt-2"> <i class="fas fa-book"></i> اسره لباس الصليب - نشاط دراسه كتاب</h5>
+            </div>
+    
+        <div class="col-md-6 ">
+                <p> <i class="fas fa-user-check"></i>  توني رشدي </p>
+        </div>
+    
+        <div class="col-md-6 ">
+            <p> <i class="fas fa-calendar-alt"></i> الاحد 5 مارس 2019 </p>
+        </div>
+    
+            <div class="col-md-6 ">
+             <p> <i class="far fa-clock"></i>  7مساء حتى 9 مساء</p>
+            </div>
+    
+            <div class="col-md-6 ">
+                <p> <i class="fas fa-redo"></i> اسبوعي</p>
+            </div>
+    
+            <div class="col-md-6 ">
+             <p> <i class="fas fa-hourglass-start"></i> 3شهوور </p>
+            </div>
+    
+            <div class="col-md-6 ">
+                <p> <i class="fas fa-map-marker"></i>  مبنى الخدمات-الدور الرابع </p>
+            </div>
+    
+            <div class="col-md-12 ">
+                <h5> <i class="fas fa-info-circle"></i> التفاصيل</h5>
+                <p>تفااااااااااااااصيل التفاصيلال  تفاصيلالتفا  صيل ا
+                        تفااااااااااااااصيل التفاصيلال  تفاصيلالتفا  صيل التفاصيل لتفاصيل </p>
+                </div>
+    
+        <div class="col-md-12 bottom">
+        <div class="float-left">
+            <button class="accept btn remove"> <i class="fas fa-check"></i> اوافق </button>
+        </div>
+        
+        <div class="float-right">
+            <button class="btn refuse remov"> <i class="far fa-times-circle"></i> ارفض</button>
+        </div>
+        <div class="clearfix"></div>
+    
+    </div>
+    <div class="bg-modal ">
+        <div class="modal-contents col-md-12">
+    
+            <div class="close">+</div>
+           <div class="">
+            <form >
+                <input class="form-control mt-5" id="inp" required type="text" placeholder=" اكتب السبب ">
+                <button id="reason" class="btn"> موافق</button>
+            </form>
+          </div>
+        </div>
+     </div>
+    
+    </div>                        
+    </div>
+    
+            </div>
+                                <!--		  end card back-->
+    
+        
+                        </div>  
+        </div>
+        <!-- end card -->
+
+          <!-- start card -->
+    <div class="col-md-4 my-2 w-100 ">
+            <div class="all-card">
+            
+    <!--		  start card front   -->
+            <div class="card-front my-5 card-face">
+            <div class="s-card my-5">
+                <img class="img-fluid" src="./images/church-1.jpg" alt="">
+                <div class=" row s-conent mx-1 mt-2 pt-1">
+                    
+                    <div class="col-md-12 my-2">
+                    <h5 class="text-center display-4 mt-5 pt-3">نشاط دراسه الكتاب</h5>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                    <p> <i class="fas fa-calendar-alt"></i> 2019 الاحد 5 مارس </p>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                        <p><i class="far fa-clock"></i> 7مساء حتى 9 مساء</p>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                        <p> <i class="fas fa-user-check"></i>  توني رشدي</p>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                        <p><i class="fas fa-map-marker"></i> غرفه 301 </p>
+                    </div>
+                        <button class="btn more mb-1 "> المزيد </button>
+                    </div>
+                </div>
+            </div>
+            <!--		  end card front -->
+                            
+                <!--		  start card back-->
+            <div class="card-back my-5 pt-5  card-face">
+                
+            <div class="s-card my-5">
+        <div class="row mt-5 mx-1">
+    
+            <div class="col-md-12">
+                <h5 class="text-center pt-2"> <i class="fas fa-book"></i> اسره لباس الصليب - نشاط دراسه كتاب</h5>
+            </div>
+    
+        <div class="col-md-6 ">
+                <p> <i class="fas fa-user-check"></i>  توني رشدي </p>
+        </div>
+    
+        <div class="col-md-6 ">
+            <p> <i class="fas fa-calendar-alt"></i> الاحد 5 مارس 2019 </p>
+        </div>
+    
+            <div class="col-md-6 ">
+             <p> <i class="far fa-clock"></i>  7مساء حتى 9 مساء</p>
+            </div>
+    
+            <div class="col-md-6 ">
+                <p> <i class="fas fa-redo"></i> اسبوعي</p>
+            </div>
+    
+            <div class="col-md-6 ">
+             <p> <i class="fas fa-hourglass-start"></i> 3شهوور </p>
+            </div>
+    
+            <div class="col-md-6 ">
+                <p> <i class="fas fa-map-marker"></i>  مبنى الخدمات-الدور الرابع </p>
+            </div>
+    
+            <div class="col-md-12 ">
+                <h5> <i class="fas fa-info-circle"></i> التفاصيل</h5>
+                <p>تفااااااااااااااصيل التفاصيلال  تفاصيلالتفا  صيل ا
+                        تفااااااااااااااصيل التفاصيلال  تفاصيلالتفا  صيل التفاصيل لتفاصيل </p>
+                </div>
+    
+        <div class="col-md-12 bottom">
+        <div class="float-left">
+            <button class="accept btn remove"> <i class="fas fa-check"></i> اوافق </button>
+        </div>
+        
+        <div class="float-right">
+            <button class="btn refuse remov"> <i class="far fa-times-circle"></i> ارفض</button>
+        </div>
+        <div class="clearfix"></div>
+    
+    </div>
+    <div class="bg-modal ">
+        <div class="modal-contents col-md-12">
+    
+            <div class="close">+</div>
+           <div class="">
+            <form >
+                <input class="form-control mt-5" id="inp" required type="text" placeholder=" اكتب السبب ">
+                <button id="reason" class="btn"> موافق</button>
+            </form>
+          </div>
+        </div>
+     </div>
+    
+    </div>                        
+    </div>
+    
+            </div>
+                                <!--		  end card back-->
+    
+        
+                        </div>  
+        </div>
+        <!-- end card -->
+
+          <!-- start card -->
+    <div class="col-md-4 my-2 w-100 ">
+            <div class="all-card">
+            
+    <!--		  start card front   -->
+            <div class="card-front my-5 card-face">
+            <div class="s-card my-5">
+                <img class="img-fluid" src="./images/church-1.jpg" alt="">
+                <div class=" row s-conent mx-1 mt-2 pt-1">
+                    
+                    <div class="col-md-12 my-2">
+                    <h5 class="text-center display-4 mt-5 pt-3">نشاط دراسه الكتاب</h5>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                    <p> <i class="fas fa-calendar-alt"></i> 2019 الاحد 5 مارس </p>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                        <p><i class="far fa-clock"></i> 7مساء حتى 9 مساء</p>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                        <p> <i class="fas fa-user-check"></i>  توني رشدي</p>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                        <p><i class="fas fa-map-marker"></i> غرفه 301 </p>
+                    </div>
+                        <button class="btn more mb-1 "> المزيد </button>
+                    </div>
+                </div>
+            </div>
+            <!--		  end card front -->
+                            
+                <!--		  start card back-->
+            <div class="card-back my-5 pt-5  card-face">
+                
+            <div class="s-card my-5">
+        <div class="row mt-5 mx-1">
+    
+            <div class="col-md-12">
+                <h5 class="text-center pt-2"> <i class="fas fa-book"></i> اسره لباس الصليب - نشاط دراسه كتاب</h5>
+            </div>
+    
+        <div class="col-md-6 ">
+                <p> <i class="fas fa-user-check"></i>  توني رشدي </p>
+        </div>
+    
+        <div class="col-md-6 ">
+            <p> <i class="fas fa-calendar-alt"></i> الاحد 5 مارس 2019 </p>
+        </div>
+    
+            <div class="col-md-6 ">
+             <p> <i class="far fa-clock"></i>  7مساء حتى 9 مساء</p>
+            </div>
+    
+            <div class="col-md-6 ">
+                <p> <i class="fas fa-redo"></i> اسبوعي</p>
+            </div>
+    
+            <div class="col-md-6 ">
+             <p> <i class="fas fa-hourglass-start"></i> 3شهوور </p>
+            </div>
+    
+            <div class="col-md-6 ">
+                <p> <i class="fas fa-map-marker"></i>  مبنى الخدمات-الدور الرابع </p>
+            </div>
+    
+            <div class="col-md-12 ">
+                <h5> <i class="fas fa-info-circle"></i> التفاصيل</h5>
+                <p>تفااااااااااااااصيل التفاصيلال  تفاصيلالتفا  صيل ا
+                        تفااااااااااااااصيل التفاصيلال  تفاصيلالتفا  صيل التفاصيل لتفاصيل </p>
+                </div>
+    
+        <div class="col-md-12 bottom">
+        <div class="float-left">
+            <button class="accept btn remove"> <i class="fas fa-check"></i> اوافق </button>
+        </div>
+        
+        <div class="float-right">
+            <button class="btn refuse remov"> <i class="far fa-times-circle"></i> ارفض</button>
+        </div>
+        <div class="clearfix"></div>
+    
+    </div>
+    <div class="bg-modal ">
+        <div class="modal-contents col-md-12">
+    
+            <div class="close">+</div>
+           <div class="">
+            <form >
+                <input class="form-control mt-5" id="inp" required type="text" placeholder=" اكتب السبب ">
+                <button id="reason" class="btn"> موافق</button>
+            </form>
+          </div>
+        </div>
+     </div>
+    
+    </div>                        
+    </div>
+    
+            </div>
+                                <!--		  end card back-->
+    
+        
+                        </div>  
+        </div>
+        <!-- end card -->
+
+          <!-- start card -->
+    <div class="col-md-4 my-2 w-100 ">
+            <div class="all-card">
+            
+    <!--		  start card front   -->
+            <div class="card-front my-5 card-face">
+            <div class="s-card my-5">
+                <img class="img-fluid" src="./images/church-1.jpg" alt="">
+                <div class=" row s-conent mx-1 mt-2 pt-1">
+                    
+                    <div class="col-md-12 my-2">
+                    <h5 class="text-center display-4 mt-5 pt-3">نشاط دراسه الكتاب</h5>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                    <p> <i class="fas fa-calendar-alt"></i> 2019 الاحد 5 مارس </p>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                        <p><i class="far fa-clock"></i> 7مساء حتى 9 مساء</p>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                        <p> <i class="fas fa-user-check"></i>  توني رشدي</p>
+                    </div>
+    
+                    <div class="col-md-6 my-2">
+                        <p><i class="fas fa-map-marker"></i> غرفه 301 </p>
+                    </div>
+                        <button class="btn more mb-1 "> المزيد </button>
+                    </div>
+                </div>
+            </div>
+            <!--		  end card front -->
+                            
+                <!--		  start card back-->
+            <div class="card-back my-5 pt-5  card-face">
+                
+            <div class="s-card my-5">
+        <div class="row mt-5 mx-1">
+    
+            <div class="col-md-12">
+                <h5 class="text-center pt-2"> <i class="fas fa-book"></i> اسره لباس الصليب - نشاط دراسه كتاب</h5>
+            </div>
+    
+        <div class="col-md-6 ">
+                <p> <i class="fas fa-user-check"></i>  توني رشدي </p>
+        </div>
+    
+        <div class="col-md-6 ">
+            <p> <i class="fas fa-calendar-alt"></i> الاحد 5 مارس 2019 </p>
+        </div>
+    
+            <div class="col-md-6 ">
+             <p> <i class="far fa-clock"></i>  7مساء حتى 9 مساء</p>
+            </div>
+    
+            <div class="col-md-6 ">
+                <p> <i class="fas fa-redo"></i> اسبوعي</p>
+            </div>
+    
+            <div class="col-md-6 ">
+             <p> <i class="fas fa-hourglass-start"></i> 3شهوور </p>
+            </div>
+    
+            <div class="col-md-6 ">
+                <p> <i class="fas fa-map-marker"></i>  مبنى الخدمات-الدور الرابع </p>
+            </div>
+    
+            <div class="col-md-12 ">
+                <h5> <i class="fas fa-info-circle"></i> التفاصيل</h5>
+                <p>تفااااااااااااااصيل التفاصيلال  تفاصيلالتفا  صيل ا
+                        تفااااااااااااااصيل التفاصيلال  تفاصيلالتفا  صيل التفاصيل لتفاصيل </p>
+                </div>
+    
+        <div class="col-md-12 bottom">
+        <div class="float-left">
+            <button class="accept btn remove"> <i class="fas fa-check"></i> اوافق </button>
+        </div>
+        
+        <div class="float-right">
+            <button class="btn refuse remov"> <i class="far fa-times-circle"></i> ارفض</button>
+        </div>
+        <div class="clearfix"></div>
+    
+    </div>
+    <div class="bg-modal ">
+        <div class="modal-contents col-md-12">
+    
+            <div class="close">+</div>
+           <div class="">
+            <form >
+                <input class="form-control mt-5" id="inp" required type="text" placeholder=" اكتب السبب ">
+                <button id="reason" class="btn"> موافق</button>
+            </form>
+          </div>
+        </div>
+     </div>
+    
+    </div>                        
+    </div>
+    
+            </div>
+                                <!--		  end card back-->
+    
+        
+                        </div>  
+        </div>
+        <!-- end card -->
+
+    
+
+
+ 
+
+    			   
+    			   
+ 
+
+ 
 
            </div>
        </div>
 </section>
+
+   <!-- footer -->
+
+   <footer class="last-section pt-4 main-color">
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-4  col-sm-12 text-center">
+                <p> جميع الحقوق محفوظه لشركه <a href="#"> choise </a> </p>
+            </div>
+            <div class=" col-md-4 col-sm-12  text-center mb-3">
+                <div class="logo w-75 m-auto text-center">
+                    <i class="fa-3x fas fa-church church-logo "></i>
+                </div>
+            </div>
+            <div class=" col-md-4 col-sm-12 mb-3 text-center">
+                <div class="social">
+                    <a href="#"> <i class="fab fa-facebook-f mx-2 border p-2"></i></a>
+                    <a href="#"> <i class="fab fa-twitter mx-2 border p-2"></i></a>
+                    <a href="#"> <i class="fab fa-instagram mx-2 border p-2"></i></a>
+                    <a href="#"> <i class="fab fa-google-plus-g mx-2 border p-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- end footer -->
 
 
 

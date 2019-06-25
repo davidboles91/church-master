@@ -1,27 +1,3 @@
-// // sign in form 
-$(document).ready(function () {
-
-var hide ,  input ;
-hide = document.querySelectorAll(".hide-password");
-input = document.querySelectorAll(".pass-input");
-
-hide.forEach((el)=>{
-
-    el.addEventListener("click", function (e) {
-        e.preventDefault();
-        input.forEach((inp) => {
-            inp.classList.toggle("show")
-
-            if (inp.classList.contains("show")) {
-                inp.setAttribute("type", "text");
-            } else {
-                inp.setAttribute("type", "password");
-            }
-        }); 
-    });
-});
-// // sign in form
-
 
 // //mwa3idi page
 
@@ -76,47 +52,86 @@ more.forEach((el) => {
         el.parentElement.parentElement.parentElement.parentElement.classList.add("visible")      
     })
 })
-//  popup
 
+
+//  popup
     var refuse =document.querySelectorAll(".refuse")
     var overlay = document.querySelector(".bg-modal")
-    var reason = document.getElementById("reason")
-    var input = document.getElementById("inp")
+    var reason = document.querySelectorAll("#reason")
+    var inputt = document.getElementById("inp")
+    var close = document.querySelectorAll(".close")
+    var accept = document.querySelectorAll(".accept")
 
 
-    refuse.forEach((btn)=>{
-        btn.addEventListener("click", function () {
-        overlay.style.display = "block"
-    });
-    })
-    if (reason!=null){
-         reason.addEventListener("click", function (e) {
-             if (input.value !== "") {
-                 e.preventDefault();
-                 overlay.style.display = "none"
-                 console.log(input.value)
-             }
-
-         })
-
-    }
-   
-
-// alert
+    // cofirm button
 
  var alertkhedma = function () {
     $(".alert-khedma").animate({ right: "40px" })
     $(".alert-khedma").delay(3000);
-    $(".alert-khedma").animate({ right: '-194px' }, 700);
+    $(".alert-khedma").animate({ right: '-194px' }, 100);
 }
- var accept = document.querySelectorAll(".accept")
- accept.forEach((ac) => {
-    ac.addEventListener("click", function () {
-        alertkhedma();
-            })
+var alertkhedma2 = function () {
+    $(".alert2-khedma").animate({ right: "40px" })
+    $(".alert2-khedma").delay(3000);
+    $(".alert2-khedma").animate({ right: '-194px' }, 100);
+}
+
+
+    // remove all-card
+    function removeAllCard(){
+        var allCard = document.querySelectorAll(".card-back")
+        allCard.forEach((eel)=>{
+            eel.addEventListener("click", function(e){
+            if (e.target.classList.contains("remove")){  
+                    e.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.remove();
+                    alertkhedma();      
+         };             
+       });     
+     });
+    };
+    accept.forEach((ac) => {
+       ac.addEventListener("click", function (e) {
+        if (confirm('هل انت متاكد ؟')){
+            removeAllCard()
+        }; 
+         });
+          });
+    
+
+        //  remove button
+
+
+    refuse.forEach((bt)=>{
+        bt.addEventListener("click", function () {
+             bt.parentElement.parentElement.parentElement.parentElement.classList.add("popup")
+        });
     });
+  
+    // hide overlay and card
 
+         reason.forEach((bt)=>{
+            bt.addEventListener("click", function (e) {
+                
+                if (this.parentNode.firstElementChild.value !== "") {
+                 e.preventDefault();   
+                 bt.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.remove();
+                 alertkhedma2();
+               };
+                 
+            });
+        });
+         
+       
 
+    // close the input
+        close.forEach((bt)=>{
+            bt.addEventListener("click", function () {
+                 bt.parentElement.parentElement.parentElement.parentElement.classList.remove("popup");
+
+            });
+        });
+    
+ 
 
 // end khedma page 
 // sign up page
@@ -202,59 +217,33 @@ more.forEach((el) => {
 
    
 
-
-
-
+  
  
 
-// calender 
 
 
-    $('#calendar').fullCalendar({
-        header: {
-            left: 'prev,next today',
-            center: 'title',
-            right: 'month,basicWeek,basicDay'
-        },
-        navLinks: true, // can click day/week names to navigate views
-        editable: true,
-        eventLimit: true, // allow "more" link when too many events
-        events: [
-            {
-                title: 'All Day Event',
-                start: '2019-06-15'
-            },
-            {
-                title: 'Long Event',
-                start: '2019-6-20',
-                end: '2019-06-30'
-            },
-            {
-                id: 999,
-                title: 'Repeating Event',
-                start: '2019-06-23T16:00:00'
-            },
-            {
-                id: 999,
-                title: 'Repeating Event',
-                start: '2019-01-16T16:00:00'
-            },
-            {
-                title: 'Conference',
-                start: '2019-06-25',
-                end: '2019-06-26'
-            },
-          
-            {
-                title: 'Click for Google',
-                url: 'http://google.com/',
-                start: '2019-06-28'
+
+// // sign in form
+var hide ,  input ;
+hide = document.querySelectorAll(".hide-password");
+input = document.querySelectorAll(".pass-input");
+
+hide.forEach((el)=>{
+
+    el.addEventListener("click", function (e) {
+        e.preventDefault();
+        
+            input.forEach((inp) => {
+            inp.classList.toggle("show")
+
+            if (inp.classList.contains("show")) {
+                inp.setAttribute("type", "text");
+            } else {
+                inp.setAttribute("type", "password");
             }
-        ]
+        });
+        
+     
     });
-
 });
-
-
-
 
