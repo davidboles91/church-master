@@ -1106,6 +1106,35 @@ input {
     height: 4px;
     background-color: #0b91b6;
 }
+/* end sign up page */
+
+/* start hgz section */
+.hgz{
+    background-image: url(../images/r.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.hgz-form h5{
+    font-size: 36px;
+    font-weight: bold;
+
+}
+.hgz-form{
+ background-color: #ccc;
+ width: 80%;
+ border: 1px solid #0b91b6;
+ box-shadow: 2px 2px 3px #0b91b6,          
+ -2px -2px 3px #0b91b6;
+ border-radius:5px;
+ -webkit-border-radius:5px;
+ -moz-border-radius:5px;
+ -ms-border-radius:5px;
+ -o-border-radius:5px;
+ position: relative;
+ bottom: 60px;
+}
 
 
 
@@ -1241,7 +1270,9 @@ input {
     .pendind-table , .foot-table {
         font-size: 13px
     }
-
+    .hgz-form h5 {
+        font-size: 26px;
+    }
 
 }
 
