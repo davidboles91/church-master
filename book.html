@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title> مواعيدي </title>
+    <link rel="stylesheet" href="css/datedropper.css" />
+    <link rel="stylesheet" href="css/my-style.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/fullcalendar.min.css" />
     <link rel="stylesheet" href="css/index_style.css" />
     <link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Scheherazade" rel="stylesheet">
@@ -154,156 +155,156 @@
     <!-- end nav bar -->
 
     <!-- stat booking section -->
-<section class="book py-5">
-  <section class="">
-    <div class="heading text-center mt-5">
-        <h2 class="my-3 display-4 ">حجز موعد</h2>
-        <!-- <hr class=" m-auto "> -->
-    </div>
-<div class="container">
-  <div class="row" >
-    <div class="col-md-12">       
-     <div class="bookForm  my-4">
-        <form>
-            <h5 class="color-font2  text-center"> اسم الاسره </h5>
-            
-            <div class="row mx-5">
-                
-                <div class="col-md-6 sm-12">
-                        <select id="inputState" class=" hary1 form-control  ">
-                            <!--multiple-->
-                            <option selected> نوع النشاط </option>
-                            <option value=""> بيتر </option>
-                            <option value=""> بيشو </option>
-                            <option value="">مينا </option>
-                        </select>
+
+    <section class="book mt-5 pt-1">
+            <div class="heading text-center mt-5">
+                    <h2 class=" ">حجز موعد</h2>
+                    <!-- <hr class=" m-auto "> -->
                 </div>
+        <div class="container">
+            <form class="form-group bookForm mt-3">
+                <div class="row m-3">
 
-                <div class="col-md-6 sm-12">
-                    <select id="inputState" class=" hary1 form-control  ">
-                        <!--multiple-->
-                        <option selected> اسم الخادم المسئول </option>
-                        <option value=""> بيتر </option>
-                        <option value=""> بيشو </option>
-                        <option value="">مينا </option>
-                    </select>
-                </div>
+                   <div class="col-md-12">
+                        <h5 class="color-font2  text-center"> اسم الاسره </h5>
+                    </div> 
 
-                <div class="col-md-12 text-center">
-                    <textarea required class="form-control  mx-auto my-2" placeholder=" تفاصيل النشاط    " rows="3"></textarea>
-                </div>
-
-                <div class="col-md-12">
-                    <h5 class="display-4 text-center color-font2 "> الوقت </h5>
-                </div>
-
-                <div class="col-md-6 ">
-                <select id="inputState" class="form-control hary1  my-2" >
-                    <option selected> تكرار فتره الحجز</option>
-                    <option value="">...</option>
-                    <option value="">...</option>
-                    <option value="">...</option>
-                    <option value="">...</option>
-                </select>
-                </div>
-
-                <div class="col-md-6 ">
-        <input required type="date" placeholder=" اختر تاريخ الحجز "class="form-control my-2" placeholder="/-/-/" />
-                </div>
-
-                <div class="col-md-6">
-                    <select id="inputState" class="form-control hary1 my-2  ">
-                        <option selected> من </option>
-                        <option value="">12 ص</option>
-                        <option value="">1 ص</option>
-                        <option value="">2 ص</option>
-                        <option value="">3 ص</option>
-                        <option value="">4 ص</option>
-                        <option value="">5 ص</option>
-                        <option value="">6 ص</option>
-                        <option value="">7 ص</option>
-                        <option value="">8 ص</option>
-                        <option value="">9 ص</option>
-                        <option value="">10 ص</option>
-                    </select>            
-                </div>
-
-                <div class="col-md-6 ">
-                <select id="inputState" class=" form-control hary1 my-2 ">
-                    <option selected> الى </option>
-                    <option value="">400</option>
-                    <option value="">500</option>
-                    <option value="">200</option>
-                    <option value="">100</option>
-                </select>                                           
-                </div>
-                       
-                <div class="col-md-6 my-3">
-                    <select id="inputState" class="form-control hary  my-2" multiple="multiple">
-                        <option> اختر مكان الحجز </option>
-                        <option value="قق">ffffffff</option>
-                        <option value="بب">vvvvvvvvvvvv</option>
-                        <option value="بب">cccccccccccc</option>
-                    </select>
-                </div>
-                    
-                    <div class="col-md-6 mt-3 ">	 
-                <div class="options">
-
-            <h5 class="color-font2"> فتره الحجز </h5>
-            <ul class="listunstiled">
-            
-            <li class="form-check mb-2">
-               
-                <label class="form-check-label" for="exampleRadios1">
-                        <input class="radi form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                        value="option1">
-                    <span> ابدا</span>
-
-                </label>
-            </li>
-
-            <li class="form-check mb-2">
-                <input class="radi form-check-input" type="radio" name="exampleRadios"
-                    id="exampleRadios3" value="option3">
-                <label class="form-check-label" for="exampleRadios3 placeholder ">
-                        <span> فتره </span> 
-                        <select id="inputState" class=" form-control w-50 radi-input2 ">
-                        <option selected> تكرار فتره الحجز </option>
-                        <option value="قق">kkkkkkk</option>
-                        <option value="بب">dddddddddd</option>
-                        <option value="بب">ddddddddddd</option>
-                    </select>
-                </label>
-                
-            </li>
-
-            <li class="form-check mb-2">
-                <input class="radi form-check-input test" type="radio" name="exampleRadios"
-                    id="exampleRadios2"
-                    value="option2">
-                <label class="form-check-label " for="exampleRadios2">
-                    <span> اخنر تاريخ </span> 
-                    <input type="date" class=" radi-input form-control" placeholder="/-/-/">
-                </label>
-                
-            </li>
-
-        </ul>
-        </div>				
-    </div>
-</div>
-									
-                  <!-- <button class="btn main-color mb-4 w-25 "> اضافه </button> <button type="submit" -->
-                     <button class=" btn small-button my-3 "> اضافه</button>
+                        <div class="col-md-6 sm-12">
+                            <select required ="" id="inputState" class=" hary2 form-control  ">
+                                    <option value=""> نوع النشاط </option>
+                                    <option value="1"> بيتر </option>
+                                    <option value="fa-rotate-270"> بيشو </option>
+                                    <option value="3">مينا </option>
+                                </select>
+                         </div>
         
-             </form>
+                        <div class="col-md-6 sm-12">
+                            <select id="inputState" class=" hary4 form-control  ">
+                                <!--multiple-->
+                                <option value=""> اسم الخادم المسئول </option>
+                                <option value="1"> بيتر </option>
+                                <option value="2"> بيشو </option>
+                                <option value="3">مينا </option>
+                            </select>
+                        </div>
+                        
+                   <div class="col-md-12 text-center">
+                        <textarea required class="form-control  mx-auto my-2" placeholder=" تفاصيل النشاط    " rows="3"></textarea>
+                    </div>
+
+                    <div class="col-md-12">   
+                        <h5 class=" text-center color-font2 "> الوقت </h5>
+                    </div> 
+
+                    <div  class="col-md-6  mt-2">
+                            <select id="inputState" class="form-control  hary " multiple="multiple">
+                                <option> اختر مكان الحجز </option>
+                                <option value="قق">ffffffff</option>
+                                <option value="بب">vvvvvvvvvvvv</option>
+                                <option value="بب">cccccccccccc</option>
+                            </select>
+                    </div>
+
+                    <div class="col-md-6 ">
+                     <input class ="form-control" id="callender" type="text" data-large-mode="true"  data-lock="from"
+                       data-theme="my-style"/>
+                    </div>
+    
+                    <div class="col-md-6 ">
+                        <select required="" id="inputState" class="form-control hary3 my-2  ">
+                            <option value=""> من </option>
+                            <option value="">12 ص</option>
+                            <option value="">1 ص</option>
+                            <option value="">2 ص</option>
+                            <option value="">3 ص</option>
+                            <option value="">4 ص</option>
+                            <option value="">5 ص</option>
+                            <option value="">6 ص</option>
+                            <option value="">7 ص</option>
+                            <option value="">8 ص</option>
+                            <option value="">9 ص</option>
+                            <option value="">10 ص</option>
+                        </select>            
+                    </div>
+
+                    
+                   <div class="col-md-6 ">
+                        <select required = "" id="inputState" class=" form-control hary5 my-2 ">
+                            <option value=""> الى </option>
+                            <option value="a">400</option>
+                            <option value="b">500</option>
+                            <option value="b">200</option>
+                            <option value="b">100</option>
+                        </select>                                           
+                   </div>
+                   <div class="col-md-6 mt-3 radio-option"">	 
+                        <div class="options">
+        
+                    <h5 class="color-font2"> فتره الحجز </h5>
+                    <ul class="listunstiled">
+                    
+                    <li class="form-check mb-2">
+                       
+                        <label class="form-check-label" for="exampleRadios1">
+                                <input class="radi form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                value="option1">
+                            <span> ابدا</span>
+        
+                        </label>
+                    </li>
+        
+                    <li class="form-check mb-2">
+                        <input class="radi form-check-input" type="radio" name="exampleRadios"
+                            id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3 placeholder ">
+                                <span> فتره </span> 
+                                <select id="inputState" class=" form-control w-50 radi-input2 ">
+                                <option selected> تكرار فتره الحجز </option>
+                                <option value="قق">kkkkkkk</option>
+                                <option value="بب">dddddddddd</option>
+                                <option value="بب">ddddddddddd</option>
+                            </select>
+                        </label>
+                        
+                    </li>
+        
+                    <li class="form-check mb-2">
+                        <input class="radi form-check-input test" type="radio" name="exampleRadios"
+                            id="exampleRadios2"
+                            value="option2">
+                        <label class="form-check-label " for="exampleRadios2">
+                            <span> اخنر تاريخ </span> 
+
+                            <input class="form-control radi-input" id="callender2" type="text"  data-theme="my-style"/>
+                        </label>
+                        
+                    </li>
+        
+                </ul>
+                </div>				
                </div>
-            </div>
+
+                    <div class="col-md-6 mt-3 ">
+                            <select  id="repeated" class="form-control hary1"  >
+                                    <option value=""> تكرار فتره الحجز </option>
+                                    <option value="2"> ابدا </option>
+                                    <option value="b"> 100 </option>
+                            </select>
+                    </div>
+                    
+
+                                      
+                   
+
+                
+
+                </div>
+                <button class=" btn small-button mt-3 "> اضافه</button>
+
+            </form>
         </div>
-    </div>
-  </section>
-</section>
+    </section>
+
 
    <!-- footer -->
 
@@ -339,17 +340,15 @@
 
 
 
-     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/select2.full.min.js"></script>
+     <script src="js/jquery.min.js"></script>
      <script src="js/popper.min.js"></script>
      <script src="js/bootstrap.min.js"></script>
+     <script src="js/select2.full.min.js"></script>
+     <script src="js/datedropper.js"></script>
+
+
      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script> -->
      <script src="js/main.js"></script>
-     <script>
-        // select2 library -->
-
- 
-    //     </script>
 
      </body>
 
