@@ -42,11 +42,8 @@ var alertDelete = function() {
           }
  })
 
-//  if (document.getElementById("repeated").value = "2"){
-//      console.log("yes")
-//  }else{
-//     console.log("no")
-//  }
+ 
+
 
 
 // khedma page

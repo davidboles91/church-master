@@ -2,13 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    transition: all 1s;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }
+
     p{
     font-family: 'Scheherazade', serif;
     }
@@ -179,7 +179,7 @@
     background-color: #eee;
 }
 .home-container .fc-button-group button , .fc-basicWeek-button , .fc-today-button{
-    background-color: #0b91b6 !important;
+    background-color: #202388 !important;
     padding: 4px 8px 5px;
     color:#fff;
     border: 1px solid #fff;
@@ -189,11 +189,13 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    height: 35px!important;
+    width: 60px;
 }
 .home-container:hover .fc-button-group button:hover , .fc-basicWeek-button:hover , .fc-today-button:hover{
-    background-color: #fff!important;
-    color:#0b91b6;
-    border: 1px solid #0b91b6;
+    background-color: #0b91b6!important;
+    color:#fff;
+ 
 }
 
 .home-container #calendar {
@@ -382,6 +384,10 @@
 .heading:hover hr {
     width: 6%
 }
+.bookForm h5{
+    font-size: 30px;
+    font-weight: 800;
+}
 .bookForm{
     border: 1px solid #fff;
     box-shadow: 2px 2px 3px #333;
@@ -479,9 +485,9 @@
     height: 4px;
     background-color: #fff;
 }
-/* .radio-option{
+.radio-option{
     display: none;;
-} */
+}
 
 
 
