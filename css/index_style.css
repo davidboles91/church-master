@@ -146,6 +146,7 @@
 }
 .navbar-toggle{
     color: #fff;
+    /* display: flex */
 }
 .navbar-toggler:focus{
     outline: none!important;
@@ -159,7 +160,7 @@
     margin-top: 10px;
 }
 .fc-center {
-    color: #0b91b6;
+    color: #202388;
     font-weight: bold;
     font-size: 36px!important;
     margin-top: 20px;
@@ -248,7 +249,8 @@
 }
 .calender-left span{
     font-size: 22px;
-    font-weight: bold
+    font-weight: bold;
+    font-family: 'Scheherazade', serif;
 }
 .calender-left input{
    margin-top: 12px;
@@ -353,7 +355,7 @@
     background-image: url(../images/church-1.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 800px;
+    height: 900px;
 }
 /* .overlay{
     position: absolute;
@@ -431,7 +433,7 @@
 }
 
 .radi{
-    width: 5%!important;
+    width: 12%!important;
 }
 .radi-input{
     width: 60% !important;
@@ -488,6 +490,18 @@
 .radio-option{
     display: none;;
 }
+.choose-number p{
+    font-size: 25px
+}
+.choose-number input{
+    width: 90%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
 
 
 
@@ -631,6 +645,7 @@
       right: 25%;
       box-shadow: -2px -5px 9px -3px #0b91b6;
 }
+
 .card-conainer img{
   top: -78px;
 }
@@ -1284,8 +1299,11 @@ input {
         font-size: 26px;
     }
     .book{
-
-        height: 940px;
+        height: 1230px;
+    }
+    .test-display{
+        position: relative!important;
+        top:-64px!important;
     }
 
 }
