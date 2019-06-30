@@ -355,7 +355,6 @@
     background-image: url(../images/church-1.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 900px;
 }
 /* .overlay{
     position: absolute;
@@ -1298,9 +1297,7 @@ input {
     .hgz-form h5 {
         font-size: 26px;
     }
-    .book{
-        height: 1230px;
-    }
+    
     .test-display{
         position: relative!important;
         top:-64px!important;
