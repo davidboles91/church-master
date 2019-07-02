@@ -526,9 +526,7 @@
     background-color: #fff!important;
 }
 #servise .select2-container--default .select2-selection--single{
-    background-color: #fff!important;
-
-    
+    background-color: #fff!important;   
 }
 
 
@@ -1339,6 +1337,9 @@ input {
         position: relative!important;
         top:-64px!important;
     }
+    #servise .select2-container--default .select2-selection--single {
+    background-color: #fff!important;   
+}
 
 }
 
