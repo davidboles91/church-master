@@ -31,14 +31,20 @@ var alertDelete = function() {
          if ($(this).val() == "option2") {
              $(".radi-input").css("display", "block");
              $(".radi-input2").css("display", "none");
+             $(".radi-input3").css("display", "none");
+
          }
          else if ($(this).val() == "option3") {
              $(".radi-input").css("display", "none");
-             $(".radi-input2").css("display", "block");
+             $(".radi-input2").css("display", "inline-block");
+             $(".radi-input3").css("display", "inline-block");
+
          }
           else  {
              $(".radi-input").css("display", "none");
              $(".radi-input2").css("display", "none");
+             $(".radi-input3").css("display", "none");
+
           }
  })
 

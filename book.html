@@ -181,7 +181,7 @@
                         <h5 class="color-font2  text-center"> اسم الاسره </h5>
                     </div> 
 
-                        <div class="col-md-6 sm-12">
+                        <div class="col-md-4 sm-12">
                             <select required ="" id="inputState" class=" hary1 form-control  ">
                                     <option value=""> نوع النشاط </option>
                                     <option value="1"> بيتر </option>
@@ -190,7 +190,7 @@
                                 </select>
                          </div>
         
-                        <div class="col-md-6 sm-12">
+                        <div class="col-md-4 sm-12 mb-3">
                             <select id="inputState" class=" hary1 form-control  ">
                                 <!--multiple-->
                                 <option value=""> اسم الخادم المسئول </option>
@@ -200,29 +200,22 @@
                             </select>
                         </div>
                         
-                   <div class="col-md-12 text-center">
-                        <textarea required class="form-control  mx-auto my-2" placeholder=" تفاصيل النشاط    " rows="3"></textarea>
+                   <div class="col-md-4 text-center">
+                        <textarea required class="form-control  mx-auto " placeholder=" تفاصيل النشاط    " rows="1"></textarea>
                     </div>
 
-                    <div class="col-md-12">   
+                    <div class="col-md-12 ">   
                         <h5 class=" text-center color-font2 "> الوقت </h5>
                     </div> 
 
-                    <div  class="col-md-6  mt-2">
-                            <select id="inputState" class="form-control  hary " multiple="multiple">
-                                <!-- <option> اختر مكان الحجز </option> -->
-                                <option value="قق">ffffffff</option>
-                                <option value="بب">vvvvvvvvvvvv</option>
-                                <option value="بب">cccccccccccc</option>
-                            </select>
-                    </div>
+               
 
-                    <div class="col-md-6 ">
+                    <div class="col-md-4 ">
                      <input class ="form-control" id="callender" type="text" data-large-mode="true"  data-lock="from"
                        data-theme="my-style"/>
                     </div>
 
-                    <div class="col-md-6 test ">
+                    <div class="col-md-4 test mt-3">
                         <select required="" id="inputState" class="form-control hary1 my-2  ">
                             <option value=""> من </option>
                             <option value="">12 ص</option>
@@ -240,7 +233,7 @@
                     </div>
 
                     
-                   <div class="col-md-6 ">
+                   <div class="col-md-4 mt-3">
                         <select required = "" id="inputState" class=" form-control hary1 my-2 ">
                             <option value=""> الى </option>
                             <option value="a">400</option>
@@ -250,108 +243,90 @@
                         </select>                                           
                    </div>
 
-                   <div class=" w-50 mx-auto mt-3 ">
+                   <div  class="col-md-6  mt-2">
+                            <select  id="inputState" class="form-control  hary" multiple="multiple">
+                                <!-- <option> اختر مكان الحجز </option> -->
+                                <option value="قق">ffffffff</option>
+                                <option value="بب">vvvvvvvvvvvv</option>
+                                <option value="بب">cccccccccccc</option>
+                            </select>
+                    </div>
+
+                   <div class=" col-md-6 my-2 ">
                     <select  id="repeated" class="form-control never hary1"  >
                             <option value=""> تكرار فتره الحجز </option>
                             <option value="none"> ابدا </option>
                             <option value="b"> 100 </option>
                     </select>
                   </div>
+<!-- ................................................................................ -->
+                <div class="col-md-12 mt-3 hgz-test radio-options row">
 
-
-                <div class="col-md-12 mt-3 hgz-test radio-option row">
+                        <div  class="col-md-6  mt-2" >
+                                <select id="inputState" class="form-control  hary2 " multiple="multiple">
+                                    <option> اختر مكان الحجز </option>
+                                    <option value="قق">ما عدا الاسبوع الاول</option>
+                                    <option value="بب">ما عدا الاسبوع التاني</option>
+                                    <option value="بب">ما عدا الاسبوع التالت</option>
+                                    <option value="بب">ما عدا الاسبوع الربع</option>
+                
+                                </select>
+                        </div>
 
                    <div class="col-md-6 options mt-3">	 
                       <!-- <h5 class="color-font2"> فتره الحجز </h5> -->
                     
-                      <div class="row">
+                      <ul class="list-unstyled">
 
-                    <div class="col-md-4 ">
-                        <label class="form-check-label" for="exampleRadios1">
-                            <input class="radi form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                            value="option1">
-                        <span> ابدا</span>
-                       </label>
-                    </div>
-                        
-                    <div class="col-md-4">
-                        <input class="radi form-check-input" type="radio" name="exampleRadios"
-                            id="exampleRadios3" value="option3">
-                        <label class="form-check-label" for="exampleRadios3 placeholder ">
-                                <span> فتره </span> 
+                            <li class="form-check mb-2">
+               
+                                    <label class="form-check-label" for="exampleRadios1">
+                                            <input class="radi form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                            value="option1">
+                                        <span> ابدا</span>
+                    
+                                    </label>
+                                </li>
+                                
+                         <li class="form-check mb-2">
+                                <input class="radi form-check-input" type="radio" name="exampleRadios"
+                                    id="exampleRadios3" value="option3">
+                                <label class="form-check-label" for="exampleRadios3 placeholder ">
+                                        <span> فتره </span> 
+
+                                <div class=" radi-input2">
+                                         <input type="number" class="form-cotrol" placeholder=" اختر رقم ....">
+                             </div>
+                             <span class="radi-input3" >يوما</span> 
+
+                                                  
+                                </label>
+                                
+                            </li>
+
                      
-                        </label>
-                    </div>
-                   
-                    <div class="col-md-4">
-                        <input class="radi form-check-input test" type="radio" name="exampleRadios"
-                            id="exampleRadios2"
-                            value="option2">
-                        <label class="form-check-label " for="exampleRadios2">
-                            <span> اخنر تاريخ </span> 
+                        <li class="form-check mb-2">
+                            <input class="radi form-check-input test" type="radio" name="exampleRadios"
+                                id="exampleRadios2"
+                                value="option2">
+                            <label class="form-check-label " for="exampleRadios2">
+                                <span> اخنر تاريخ </span> 
+                                <input type="date" class=" radi-input form-control" placeholder="/-/-/">
+                            </label>
+                            
+                        </li>
 
-                        </label>
-                    </div>
-
-                    <div class="col-md-8 my-3 test-display">
-                     <input class="form-control w-75 radi-input" id="callender2" type="text"  data-theme="my-style"/>
-
-                     <select id="inputState" class=" form-control w-75  radi-input2 ">
-                            <option selected> تكرار فتره الحجز </option>
-                            <option value="قق">kkkkkkk</option>
-                            <option value="بب">dddddddddd</option>
-                            <option value="بب">ddddddddddd</option>
-                        </select>
-                    </div>
-
-            
-                </div>				
-            </div>
+                    </ul>
     
-               <div  class="col-md-6  mt-2" >
-                <select id="inputState" class="form-control  hary2 " multiple="multiple">
-                    <option> اختر مكان الحجز </option>
-                    <option value="قق">ما عدا الاسبوع الاول</option>
-                    <option value="بب">ما عدا الاسبوع التاني</option>
-                    <option value="بب">ما عدا الاسبوع التالت</option>
-                    <option value="بب">ما عدا الاسبوع الربع</option>
-
-                </select>
-                </div> 
+          
 
                </div>   
-               <div class="col-md-12 mt-4 ">   
-                    <h5 class=" text-center color-font2 "> رقم </h5>
-                </div> 
-                <div class="col-md-12">
-                    <div class="row">
-                            <div class="col-md-6">
-                                    <div class="row choose-number">
-                                        <div class="col-md-8 col-6">
-                                                <input type="number" class="form-cotrol" placeholder=" اختر رقم ...."> 
-                                        </div>
-                                        <div class="col-md-4 col-6 mt-3">
-                                            <p>يوما</p>
-                                        </div>
-                                    </div>   
-                            </div>
-                
-                                <div class="col-md-6">
-                                        <div class="row choose-number">
-                                            <div class="col-md-8 col-6">
-                                                    <input type="number" class="form-cotrol" placeholder=" اختر رقم ...."> 
-                                            </div>
-                                            <div class="col-md-4 col-6 mt-3">
-                                                <p>يوما</p>
-                                            </div>
-                                        </div>   
-                                </div>
-                    </div>
-                </div>
+              
+           
  
 
                  </div>
-                <button class=" btn small-button mt-3 "> اضافه</button>
+                <button class=" btn small-button my-3 "> اضافه</button>
             </form>
         </div>
     </section>
@@ -404,3 +379,12 @@
      </body>
 
      </html>
+
+
+
+     <!-- <div class="col-md-8 col-6">
+                                                <input type="number" class="form-cotrol" placeholder=" اختر رقم ...."> 
+                                        </div>
+                                        <div class="col-md-4 col-6 mt-3">
+                                            <p>يوما</p>
+                                        </div> -->

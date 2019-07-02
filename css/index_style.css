@@ -428,11 +428,12 @@
 }
 .form-check span{
     position: relative;
-    margin-right: 10px
+    margin-right: 40px
 }
 
 .radi{
     width: 12%!important;
+    height: 20px;
 }
 .radi-input{
     width: 60% !important;
@@ -442,11 +443,21 @@
     left: 1px;
     display: none;
 }
+.radi-input2 input{
+    width: 100%
+}
 .radi-input2{
     display: none;
     position: absolute;
-    top: -7px;
-    left: 1px;
+    top: -8px;
+    left: 93px;
+}
+.radi-input3{
+    display: none;
+    position: absolute;
+    font-size: 18px;
+    top: 9px;
+    left: -297px
 }
 .small-button{
     width: 30%;
@@ -499,6 +510,12 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+#servise .hary1:focus{
+ box-shadow: none;
+ outline: none;
+ border-color: #0b91b6;
+
 }
 
 
@@ -1296,6 +1313,9 @@ input {
     }
     .hgz-form h5 {
         font-size: 26px;
+    }
+    .radi-input3{
+        display: none;
     }
     
     .test-display{
