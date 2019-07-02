@@ -412,7 +412,7 @@
     background-color: #eee;
     border: 1px solid #0b91b6;
 }
-.bookform select ,.select2-container--default .select2-selection--single {
+.bookform select ,.select2-container--default .select2-selection--single , .bookForm textarea  {
     height: 40px;
 }
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
@@ -511,11 +511,15 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-#servise .hary1:focus{
+#servise .hary3:focus{
  box-shadow: none;
  outline: none;
  border-color: #0b91b6;
 
+}
+.select2-container .select2-selection--multiple{
+    height: 40px;
+    border-color:#0b91b6;
 }
 
 
