@@ -511,7 +511,7 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-#servise .hary3:focus{
+#servise .select2-container:focus{
  box-shadow: none;
  outline: none;
  border-color: #0b91b6;
@@ -521,7 +521,15 @@
     height: 40px;
     border-color:#0b91b6;
 }
+#servise .select2-container{
+    margin-top: 15px;
+    background-color: #fff!important;
+}
+#servise .select2-container--default .select2-selection--single{
+    background-color: #fff!important;
 
+    
+}
 
 
 
