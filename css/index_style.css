@@ -444,7 +444,7 @@
     display: none;
 }
 .radi-input2 input{
-    width: 100%
+    width: 60%
 }
 .radi-input2{
     display: none;
@@ -1314,9 +1314,14 @@ input {
     .hgz-form h5 {
         font-size: 26px;
     }
-    .radi-input3{
-        display: none;
+    .radi-input3 {
+        left: -151px;
+        top: -10px;
     }
+    .radi-input2{
+        left: -31px;
+        top: -25px;
+     }
     
     .test-display{
         position: relative!important;
