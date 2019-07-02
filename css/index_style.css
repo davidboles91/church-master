@@ -498,7 +498,7 @@
     background-color: #fff;
 }
 .radio-option{
-    display: none;;
+    display: none;
 }
 .choose-number p{
     font-size: 25px
@@ -1340,6 +1340,8 @@ input {
     #servise .select2-container--default .select2-selection--single {
     background-color: #fff!important;   
 }
+
+
 
 }
 
